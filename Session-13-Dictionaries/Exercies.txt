@@ -1,0 +1,19 @@
+Viết chương trình Python để tạo một từ điển chứa thông tin về một người, bao gồm tên, tuổi và địa chỉ. Sau đó in ra thông tin của người đó.
+
+Viết chương trình Python để thêm một cặp key-value mới vào từ điển đã cho.
+
+Viết chương trình Python để xóa một key cụ thể khỏi từ điển đã cho.
+
+Viết chương trình Python để in ra tất cả các key trong từ điển đã cho.
+
+Viết chương trình Python để in ra tất cả các value trong từ điển đã cho.
+
+Viết chương trình Python để tính tổng của tất cả các giá trị số trong từ điển.
+
+Viết chương trình Python để tìm giá trị lớn nhất và nhỏ nhất trong từ điển chứa các giá trị số.
+
+Viết chương trình Python để kiểm tra xem một key cụ thể có tồn tại trong từ điển hay không.
+
+Viết chương trình Python để tạo một từ điển mới bằng cách sao chép toàn bộ nội dung từ một từ điển đã cho.
+
+Viết chương trình Python để xóa tất cả các cặp key-value khỏi từ điển.

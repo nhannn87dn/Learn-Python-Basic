@@ -1,0 +1,19 @@
+Viết chương trình Python để nhập một chuỗi từ người dùng và in ra độ dài của chuỗi đó.
+
+Viết chương trình Python để nhập một chuỗi từ người dùng và in ra chuỗi đó viết hoa (uppercase).
+
+Viết chương trình Python để nhập một chuỗi từ người dùng và in ra chuỗi đó viết thường (lowercase).
+
+Viết chương trình Python để nhập một chuỗi từ người dùng và đảo ngược chuỗi đó (ví dụ: "Hello" -> "olleH").
+
+Viết chương trình Python để nhập một chuỗi từ người dùng và in ra chuỗi đó bằng cách đảo ngược thứ tự từng từ (ví dụ: "Hello World" -> "olleH dlroW").
+
+Viết chương trình Python để nhập một chuỗi từ người dùng và đếm số lượng ký tự trong chuỗi.
+
+Viết chương trình Python để nhập một chuỗi từ người dùng và đếm số lượng từ trong chuỗi.
+
+Viết chương trình Python để nhập một chuỗi từ người dùng và kiểm tra xem chuỗi có phải là chuỗi Palindrome hay không.
+
+Viết chương trình Python để nhập một chuỗi và một ký tự từ người dùng, sau đó đếm số lần xuất hiện của ký tự trong chuỗi.
+
+Viết chương trình Python để nhập một chuỗi từ người dùng và kiểm tra xem chuỗi có bắt đầu hoặc kết thúc bằng một chuỗi con cụ thể hay không.

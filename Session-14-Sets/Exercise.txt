@@ -1,0 +1,19 @@
+Viết chương trình Python để tạo một tập hợp chứa 5 số nguyên nhập từ người dùng.
+
+Viết chương trình Python để tạo một tập hợp chứa 5 chuỗi nhập từ người dùng.
+
+Viết chương trình Python để tính tổng của tất cả các số trong tập hợp số nguyên đã cho.
+
+Viết chương trình Python để tìm số lớn nhất trong tập hợp số nguyên đã cho.
+
+Viết chương trình Python để nối hai tập hợp số nguyên thành một tập hợp mới.
+
+Viết chương trình Python để tìm các số chẵn trong tập hợp số nguyên và trả về một tập hợp mới chứa các số đó.
+
+Viết chương trình Python để loại bỏ tất cả các số lặp lại trong tập hợp số nguyên.
+
+Viết chương trình Python để tạo một tập hợp mới chứa các phần tử chỉ có trong một trong hai tập hợp đã cho (không có phần tử chung).
+
+Viết chương trình Python để kiểm tra xem một tập hợp có là tập hợp con của tập hợp khác hay không.
+
+Viết chương trình Python để kiểm tra xem hai tập hợp có phần tử chung hay không.

@@ -1,0 +1,45 @@
+LIST
+==========================
+Viết chương trình Python để tạo một danh sách chứa 5 số nguyên nhập từ người dùng.
+
+Viết chương trình Python để tạo một danh sách chứa 5 chuỗi nhập từ người dùng.
+
+Viết chương trình Python để tính tổng của tất cả các số trong danh sách số nguyên đã cho.
+
+Viết chương trình Python để tìm số lớn nhất trong danh sách số nguyên đã cho.
+
+Viết chương trình Python để sao chép tất cả các phần tử từ danh sách A sang danh sách B.
+
+Viết chương trình Python để đảo ngược danh sách đã cho (ví dụ: [1, 2, 3] -> [3, 2, 1]).
+
+Viết chương trình Python để loại bỏ tất cả các số lặp lại trong danh sách số nguyên.
+
+Viết chương trình Python để tìm các số chẵn trong danh sách số nguyên.
+
+Viết chương trình Python để tính tổng hai danh sách số nguyên cùng độ dài và trả về danh sách mới chứa tổng từng cặp phần tử tương ứng.
+
+Viết chương trình Python để tìm các phần tử chung trong hai danh sách đã cho và trả về một danh sách mới chứa các phần tử đó.
+
+==========================
+TUPLES
+==========================
+
+Viết một chương trình Python để tạo một tuple chứa 5 số nguyên nhập từ người dùng.
+
+Viết một chương trình Python để tạo một tuple chứa 5 chuỗi nhập từ người dùng.
+
+Viết một chương trình Python để tính tổng của tất cả các số trong tuple số nguyên đã cho.
+
+Viết một chương trình Python để tìm số lớn nhất trong tuple số nguyên đã cho.
+
+Viết một chương trình Python để nối hai tuple số nguyên thành một tuple mới.
+
+Viết một chương trình Python để tính tổng hai tuple số nguyên cùng độ dài và trả về tuple mới chứa tổng từng cặp phần tử tương ứng.
+
+Viết một chương trình Python để sao chép tất cả các phần tử từ một tuple vào một tuple mới.
+
+Viết một chương trình Python để tìm các số chẵn trong tuple số nguyên và trả về một tuple mới chứa các số đó.
+
+Viết một chương trình Python để loại bỏ tất cả các số lặp lại trong tuple số nguyên.
+
+Viết một chương trình Python để đảo ngược tuple đã cho (ví dụ: (1, 2, 3) -> (3, 2, 1)).\

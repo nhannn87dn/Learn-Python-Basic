@@ -1,0 +1,14 @@
+Bài tập về module math:
+Viết chương trình Python để tính diện tích của hình tròn, sử dụng hằng số PI và các hàm trong module math.
+
+Bài tập về module datetime:
+Viết chương trình Python để in ra ngày và giờ hiện tại, sử dụng module datetime.
+
+Bài tập về module random:
+Viết chương trình Python để tạo một danh sách gồm 5 số ngẫu nhiên trong khoảng từ 1 đến 100, sử dụng module random.
+
+Bài tập về module os:
+Viết chương trình Python để liệt kê tất cả các tập tin trong thư mục hiện tại, sử dụng module os.
+
+Bài tập về module requests:
+Viết chương trình Python để tải nội dung của một trang web bất kỳ, sử dụng module requests.

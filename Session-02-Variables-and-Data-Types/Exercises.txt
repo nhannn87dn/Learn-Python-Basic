@@ -1,0 +1,37 @@
+Khai báo hai biến x và y với giá trị là 5 và 10, sau đó in tổng của chúng.
+
+Khai báo một biến tên là "name" và gán giá trị là tên của bạn, sau đó in ra "Xin chào [name]!"
+
+Khai báo các biến a, b, c với các giá trị là 10, 3 và 7. Tính và in ra kết quả của biểu thức (a + b) * c.
+
+Khai báo hai biến x và y với giá trị là 15 và 3, sau đó tính và in ra hiệu của chúng.
+
+Khai báo một biến "radius" với giá trị là 5. Tính và in ra diện tích của hình tròn với bán kính là "radius" (sử dụng công thức π * r^2, trong đó π (pi) là một hằng số có thể lấy giá trị 3.14).
+
+Khai báo biến a với giá trị là 12. Tính và in ra giá trị của a mũ 3 (a^3).
+
+Khai báo một biến n với giá trị là 100. Tính và in ra giá trị của căn bậc hai của n (√n).
+
+Khai báo hai biến x và y với giá trị là 7 và 3. Tính và in ra phần nguyên của phép chia x cho y (x // y).
+
+Khai báo một biến "money" với giá trị là 5000000. Tính và in ra phần dư của số tiền "money" sau khi chia cho 100000 (money % 100000).
+
+Khai báo hai biến a và b với giá trị là 15 và 4. Tính và in ra kết quả của phép chia lấy phần dư a cho b (a % b).
+
+Khai báo một biến "hour" với giá trị là 24 và một biến "minute" với giá trị là 45. Tính và in ra tổng số phút của "hour" và "minute".
+
+Khai báo hai biến "length" và "width" với giá trị lần lượt là 10 và 5. Tính và in ra diện tích của hình chữ nhật với chiều dài là "length" và chiều rộng là "width".
+
+Khai báo biến n với giá trị là 27. Tính và in ra giá trị của căn bậc ba của n (n^(1/3)).
+
+Khai báo biến a với giá trị là 7. Tính và in ra giá trị tuyệt đối của a.
+
+Khai báo một biến "temperature" với giá trị là 30. Tính và in ra giá trị của nhiệt độ "temperature" đổi từ độ Celsius sang độ Fahrenheit (F = C * 9/5 + 32).
+
+Khai báo biến "x" với giá trị là 5. Tính và in ra giá trị của x mũ 2 (x^2).
+
+Khai báo hai biến a và b với giá trị là 5 và 2. Tính và in ra kết quả của biểu thức a mũ b (a^b).
+
+Khai báo biến n với giá trị là 1000. Tính và in ra giá trị của căn bậc hai của n (n^(1/2)).
+
+Khai báo biến a với giá trị là 9. Tính và in ra kết quả của phép lũy thừa a mũ 0 (a^0).

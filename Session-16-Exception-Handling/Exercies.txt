@@ -1,0 +1,10 @@
+Viết chương trình Python để yêu cầu người dùng nhập một số nguyên. Xử lý ngoại lệ nếu người dùng nhập không phải là một số nguyên.
+
+Viết chương trình Python để yêu cầu người dùng nhập hai số và thực hiện phép chia của hai số đó. Xử lý ngoại lệ nếu người dùng nhập số thứ hai là 0.
+
+Viết chương trình Python để đọc nội dung của một tập tin văn bản. Xử lý ngoại lệ nếu tập tin không tồn tại hoặc không thể đọc được.
+
+Viết chương trình Python để chia một số nguyên cho một danh sách các số. Xử lý ngoại lệ nếu có bất kỳ số nào trong danh sách là 0 hoặc không phải là số nguyên.
+
+Viết chương trình Python để yêu cầu người dùng nhập một số và tính căn bậc hai của số đó. Xử lý ngoại lệ nếu người dùng nhập một số âm.
+
