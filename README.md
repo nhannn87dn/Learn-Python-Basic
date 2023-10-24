@@ -5,100 +5,90 @@
 - Tổng quan về Python và các tính năng của nó.
 - Cài đặt Python và thiết lập môi trường phát triển.
 - Chạy chương trình Python đầu tiên của bạn.
+- Bài tập ứng dụng
 
-## Buổi 2: Cú pháp và Biến trong Python
+## Buổi 2: Biến và kiễu dữ liệu trong Python
 
 - Cú pháp cơ bản của Python.
 - Làm việc với biến và kiểu dữ liệu.
-- Thực hiện các phép toán số học.
+- Tìm hiểu các toán tử số học
+- Bài tập ứng dụng
 
-## Buổi 3: Luồng điều khiển và Vòng lặp
+## Buổi 3: Toán tử, if và Vòng lặp
 
+- Toán tử Logic, so sánh
 - Câu lệnh điều kiện (`if`, `else`, `elif`).
 - Cấu trúc lặp (`while`, `for`).
 - Câu lệnh `break` và `continue`.
+- Bài tập ứng dụng
 
 ## Buổi 4: Hàm và Module
 
-- Định nghĩa và sử dụng hàm.
+- Định nghĩa và cách sử dụng hàm.
 - Tham số và đối số.
 - Giới thiệu về module và cách import chúng.
+- Tự định nghĩa một module
+- Bài tập ứng dụng
 
-## Buổi 5: Danh sách và Bộ
+## Buổi 5: Lập trình hướng đối tượng OOP
+
+- Giới thiệu về các khái niệm trong OOP.
+- Lớp, đối tượng và thuộc tính.
+- Phương thức và đóng gói.
+- Bài tập ứng dụng
+
+## Buổi 6: List và Tuples
 
 - Hiểu về danh sách và các thao tác trên danh sách.
 - Truy cập và thay đổi phần tử trong danh sách.
 - Giới thiệu về bộ và cách sử dụng.
-
-## Buổi 6: Từ điển
-
-- Giới thiệu về từ điển và mục đích của chúng.
-- Làm việc với các phần tử trong từ điển.
-- Phương thức và thao tác trên từ điển.
+- Bài tập ứng dụng
 
 ## Buổi 7: Xử lý Chuỗi
 
 - Kiểu dữ liệu chuỗi và các thuộc tính của nó.
 - Các phép toán và phương thức trên chuỗi.
 - Định dạng chuỗi.
+- Bài tập ứng dụng
 
-## Buổi 8: Xử lý Tập tin
+## Buổi 8: Làm việc với Tập tin và Thư mục
 
 - Đọc và ghi dữ liệu vào tập tin.
 - Chế độ tập tin và đối tượng tập tin.
 - Làm việc với tập tin văn bản và CSV.
+- Bài tập ứng dụng
 
-## Buổi 9: Xử lý Ngoại lệ
+## Buổi 9: Dữ liệu Từ điển
 
-- Xử lý và ném ngoại lệ.
-- Khối try-except.
-- Thực hành xử lý ngoại lệ.
+- Giới thiệu về từ điển và mục đích của chúng.
+- Làm việc với các phần tử trong từ điển.
+- Phương thức và thao tác trên từ điển.
+- Bài tập ứng dụng
 
-## Buổi 10: Lập trình Hướng đối tượng (OOP)
+## Buổi 10: Dữ liệu Sets
 
-- Giới thiệu về các khái niệm OOP.
-- Lớp, đối tượng và thuộc tính.
-- Phương thức và đóng gói.
+- Hiểu về danh sách và các thao tác trên danh sách.
+- Truy cập và thay đổi phần tử trong danh sách.
+- Bài tập ứng dụng
 
-## Buổi 11: Kế thừa và Đa hình
+## Buổi 11: Đồ hòa con Rùa - Turtle Graphic
 
-- Kế thừa lớp và tạo lớp con.
-- Ghi đè phương thức và sử dụng đa hình.
-- Kế thừa đa cấp và thứ tự ưu tiên
+- Thiết lập môi trường đồ họa Turtle
+- Hướng của rùa, chế độ vẽ và tọa độ màn hình
+- Các lệnh điều khiển rùa trên màn hình
+- Thiết lập kích thước sân khấu và hệ tọa độ
+- Thiết lập bút vẽ và tô màu các hình khối
+- Thiết lập chế độ tương tác đơn giản trên màn hình
+- Tìm hiểu sâu hơn về điều khiển rùa
+- Bài tập ứng dụng
 
- phương thức.
+## Buổi 12: Xử lý Lỗi và Gỡ lỗi
 
-## Buổi 12: Module và Gói
-
-- Tạo và tổ chức module.
-- Xây dựng gói và sử dụng chúng.
-- Đường dẫn tìm kiếm module và kỹ thuật import.
-
-## Buổi 13: Làm việc với Tập tin và Thư mục
-
-- Thao tác với tập tin và thư mục sử dụng module `os`.
-- Duyệt qua tập tin và thư mục.
-- Dữ liệu siêu và thư mục.
-
-## Buổi 14: Biểu thức Chính quy
-
-- Hiểu về biểu thức chính quy.
-- Tìm kiếm và so khớp mẫu.
-- Thay thế và xử lý chuỗi sử dụng biểu thức chính quy.
-
-## Buổi 15: Xử lý Lỗi và Gỡ lỗi
-
-- Kỹ thuật xử lý lỗi nâng cao.
-- Công cụ và chiến lược gỡ lỗi.
-- Các tình huống gỡ lỗi phổ biến.
-
-## Buổi 16: Dự án Cuối và Tổng kết
-
-- Áp dụng các khái niệm đã học vào dự án cuối.
-- Đánh giá lại các chủ đề chính đã được đào tạo.
-- Tài liệu học tập và tìm hiểu thêm.
-
-
-
-để khai biến trong Python ta không cần phải khai báo kiểu dữ liệu ta chỉ cần gán một giá
-trị cho tên biến, Python sẽ tự động suy ra kiểu dữ liệu tương cho biến đó
+- Lỗi Syntax và Lỗi Logic Nội tại
+- Bắt Lỗi Exception với Lệnh Try, Mức Đơn Giản
+- Bắt Lỗi Exception với Lệnh Try, Mức Đầy Đủ
+- Bắt Lỗi Chi Tiết
+- Một Vài Lỗi Exception Có Sẵn trong Python
+- Tự Tạo Lỗi (Raise Exception)
+- Mô Hình Đối Tượng của Lỗi Exception
+- Bài tập ứng dụng
