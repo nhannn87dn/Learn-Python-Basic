@@ -2,74 +2,73 @@
 | INPUT    |
 ============
 
-Viết chương trình yêu cầu người dùng nhập tên và tuổi của họ, sau đó in ra "Xin chào [tên], bạn [tuổi] tuổi."
+- Viết chương trình yêu cầu người dùng nhập tên và tuổi của họ, sau đó in ra "Xin chào [tên], bạn [tuổi] tuổi."
 
-Viết chương trình yêu cầu người dùng nhập một số nguyên và kiểm tra xem số đó có là số chẵn hay lẻ, sau đó in ra kết quả.
+- Viết chương trình yêu cầu người dùng nhập một số nguyên và kiểm tra xem số đó có là số chẵn hay lẻ, sau đó in ra kết quả.
 
-Viết chương trình yêu cầu người dùng nhập một số thực và tính diện tích của hình tròn có bán kính là số đó.
+- Viết chương trình yêu cầu người dùng nhập một số thực và tính diện tích của hình tròn có bán kính là số đó.
 
-Viết chương trình yêu cầu người dùng nhập một chuỗi và in ra chuỗi đó theo thứ tự ngược lại.
+- Viết chương trình yêu cầu người dùng nhập một chuỗi và in ra chuỗi đó theo thứ tự ngược lại.
 
-Viết chương trình yêu cầu người dùng nhập một danh sách các số nguyên, sau đó tính tổng và trung bình cộng của các số đó và in ra kết quả.
+- Viết chương trình yêu cầu người dùng nhập một danh sách các số nguyên, sau đó tính tổng và trung bình cộng của các số đó và in ra kết quả.
 
 ============
 | LOGIC     |
 ============
 
-Viết chương trình yêu cầu người dùng nhập một số nguyên và kiểm tra xem số đó có nằm trong khoảng từ 10 đến 20 không.
+- Viết chương trình yêu cầu người dùng nhập một số nguyên và kiểm tra xem số đó có nằm trong khoảng từ 10 đến 20 không.
 
-Viết chương trình yêu cầu người dùng nhập điểm của một sinh viên và kiểm tra xem sinh viên đó có đạt điểm trung bình (từ 5.0 trở lên) và không có điểm dưới 3.0 không.
+- Viết chương trình yêu cầu người dùng nhập điểm của một sinh viên và kiểm tra xem sinh viên đó có đạt điểm trung bình (từ 5.0 trở lên) và không có điểm dưới 3.0 không.
 
-Viết chương trình yêu cầu người dùng nhập một số nguyên và kiểm tra xem số đó có chia hết cho cả 3 và 5 không.
+- Viết chương trình yêu cầu người dùng nhập một số nguyên và kiểm tra xem số đó có chia hết cho cả 3 và 5 không.
 
-Viết chương trình yêu cầu người dùng nhập tên của một ngày trong tuần (viết hoa hoặc viết thường đều được) và kiểm tra xem ngày đó có phải là ngày cuối tuần (Thứ Bảy hoặc Chủ Nhật) không.
+- Viết chương trình yêu cầu người dùng nhập tên của một ngày trong tuần (- Viết hoa hoặc - Viết thường đều được) và kiểm tra xem ngày đó có phải là ngày cuối tuần (Thứ Bảy hoặc Chủ Nhật) không.
 
-Viết chương trình yêu cầu người dùng nhập một số nguyên và kiểm tra xem số đó có nằm ngoài khoảng từ 1 đến 100 không và đồng thời không là số chia hết cho 5.
+- Viết chương trình yêu cầu người dùng nhập một số nguyên và kiểm tra xem số đó có nằm ngoài khoảng từ 1 đến 100 không và đồng thời không là số chia hết cho 5.
 
 ============
 | IF ELSE  |
 ============
 
-Viết chương trình yêu cầu người dùng nhập một số nguyên và kiểm tra xem số đó có là số chẵn hay số lẻ.
+- Viết chương trình yêu cầu người dùng nhập một số nguyên và kiểm tra xem số đó có là số chẵn hay số lẻ.
 
-Viết chương trình yêu cầu người dùng nhập một số và kiểm tra xem số đó có là số âm, dương hay bằng không.
+- Viết chương trình yêu cầu người dùng nhập một số và kiểm tra xem số đó có là số âm, dương hay bằng không.
 
-Viết chương trình yêu cầu người dùng nhập điểm của một bài kiểm tra và in ra "Đậu" nếu điểm lớn hơn hoặc bằng 5 và in ra "Trượt" nếu điểm nhỏ hơn 5.
+- Viết chương trình yêu cầu người dùng nhập điểm của một bài kiểm tra và in ra "Đậu" nếu điểm lớn hơn hoặc bằng 5 và in ra "Trượt" nếu điểm nhỏ hơn 5.
 
-Viết chương trình yêu cầu người dùng nhập ba số và in ra số lớn nhất trong ba số đó.
+- Viết chương trình yêu cầu người dùng nhập ba số và in ra số lớn nhất trong ba số đó.
 
-Viết chương trình yêu cầu người dùng nhập một số nguyên và kiểm tra xem số đó có là số chia hết cho 3 và 5 đồng thời không là số chia hết cho 2 hay không.
+- Viết chương trình yêu cầu người dùng nhập một số nguyên và kiểm tra xem số đó có là số chia hết cho 3 và 5 đồng thời không là số chia hết cho 2 hay không.
 
-Viết chương trình yêu cầu người dùng nhập một số nguyên và kiểm tra xem số đó có là số nguyên tố hay không.
+- Viết chương trình yêu cầu người dùng nhập một số nguyên và kiểm tra xem số đó có là số nguyên tố hay không.
 
-Viết chương trình yêu cầu người dùng nhập ba số và kiểm tra xem ba số đó có tạo thành một tam giác hay không. Nếu là tam giác, in ra loại tam giác đó (nhọn, vuông, tù) và nếu không, in ra "Không phải tam giác".
+- Viết chương trình yêu cầu người dùng nhập năm sinh của họ và in ra "Bạn là người trưởng thành" nếu tuổi của họ lớn hơn hoặc bằng 18, và in ra "Bạn là người vị thành niên" nếu tuổi của họ nhỏ hơn 18.
 
-Viết chương trình yêu cầu người dùng nhập một chuỗi và kiểm tra xem chuỗi đó có là chuỗi Palindrome hay không.
-
-Viết chương trình yêu cầu người dùng nhập năm sinh của họ và in ra "Bạn là người trưởng thành" nếu tuổi của họ lớn hơn hoặc bằng 18, và in ra "Bạn là người vị thành niên" nếu tuổi của họ nhỏ hơn 18.
-
-Viết chương trình yêu cầu người dùng nhập một số và kiểm tra xem số đó có là số chính phương hay không.
+- Kiểm tra tuổi để vào một trang web
++ Viết một chương trình yêu cầu người dùng nhập tuổi của họ.
++ Nếu người dùng dưới 18 tuổi, in ra thông báo "Bạn chưa đủ tuổi để truy cập trang web này."
++ Nếu người dùng từ 18 tuổi trở lên, in ra thông báo "Chào mừng bạn đến với trang web!"
 
 ============
 | FOR LOOP |
 ============
 
-Viết chương trình Python in ra các số từ 1 đến 10.
+- Viết chương trình Python in ra các số từ 1 đến 10.
 
-Viết chương trình Python tính tổng các số từ 1 đến n, với n là một số nguyên được nhập từ người dùng.
+- Viết chương trình Python tính tổng các số từ 1 đến n, với n là một số nguyên được nhập từ người dùng.
 
-Viết chương trình Python in ra bảng cửu chương từ 2 đến 9.
+- Viết chương trình Python in ra bảng cửu chương từ 2 đến 9.
 
-Viết chương trình Python in ra các ký tự trong một chuỗi được nhập từ người dùng, mỗi ký tự trên một dòng.
+- Viết chương trình Python in ra các ký tự trong một chuỗi được nhập từ người dùng, mỗi ký tự trên một dòng.
 
-Viết chương trình Python tính tổng các phần tử trong một danh sách số nguyên được nhập từ người dùng.
+- Viết chương trình Python tính tổng các phần tử trong một danh sách số nguyên được nhập từ người dùng.
 
-Viết chương trình Python tính tổng các số chẵn từ 1 đến n, với n là một số nguyên được nhập từ người dùng.
+- Viết chương trình Python tính tổng các số chẵn từ 1 đến n, với n là một số nguyên được nhập từ người dùng.
 
-Viết chương trình Python in ra các số nguyên tố từ 2 đến n, với n là một số nguyên được nhập từ người dùng.
+- Viết chương trình Python in ra các số nguyên tố từ 2 đến n, với n là một số nguyên được nhập từ người dùng.
 
-Viết chương trình Python in ra các số Armstrong từ 1 đến n, với n là một số nguyên được nhập từ người dùng.
+- Viết chương trình Python in ra các số Armstrong từ 1 đến n, với n là một số nguyên được nhập từ người dùng.
 
-Viết chương trình Python tính giai thừa của một số n, với n là một số nguyên được nhập từ người dùng.
+- Viết chương trình Python tính giai thừa của một số n, với n là một số nguyên được nhập từ người dùng.
 
-Viết chương trình Python in ra các chuỗi Fibonacci từ 1 đến n, với n là một số nguyên được nhập từ người dùng.
+- Viết chương trình Python in ra các chuỗi Fibonacci từ 1 đến n, với n là một số nguyên được nhập từ người dùng.
