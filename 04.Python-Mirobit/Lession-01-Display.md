@@ -49,7 +49,10 @@ Hướng dẫn sử dụng:
 
 ### 🔥 Câu lệnh hiển thị (OUTPUT)
 
-Chi tiết: https://python.microbit.org/v/3/reference/display
+Chi tiết: 
+
+- https://python.microbit.org/v/3/reference/display
+- https://microbit-micropython.readthedocs.io/en/v2-docs/display.html
 
 
 ### Hàm `display.show()`
@@ -72,6 +75,21 @@ Trong đó đối tượng `Image` được định nghĩa sẵn một số ki�
 
 Bạn có thể tìm thấy danh sách đó ở tab API-->Microbit-->Image
 
+---
+
+**Hiển thị cụ thể các bóng LED trên ma trận 5x5**
+
+```python
+display.show(Image('99999:'
+                   '90009:'
+                   '90009:'
+                   '90009:'
+                   '99999:'))
+```
+
+Dựa vào cường độ sáng của bóng LED từ 0 - 9. Với `0` được hiểu là tắt.
+
+Xem thêm: https://microbit-micropython.readthedocs.io/en/v2-docs/tutorials/images.html
 
 ### Hàm `display.scroll()`
 
@@ -137,6 +155,42 @@ display.set_pixel(0,0,9)
 Kết quả: Đèn ở tọa độ 0, 0 sẽ sáng mức cao nhất
 
 ![led](img/led-pixcel-1.png)
+
+
+
+### 🔥 Phát âm thanh (Music)
+
+Chi tiết xem: https://python.microbit.org/v/3/reference/sound
+
+
+#### Phát một giai điệu
+
+```python
+from microbit import *
+import music
+
+audio.play(Sound.GIGGLE)
+music.play(music.BA_DING)
+```
+
+#### Phát một nốt nhạc
+
+```python
+from microbit import *
+import music
+
+music.play(['c', 'd', 'e', 'c'])
+```
+
+#### Phát âm văn bản
+
+```python
+from microbit import *
+import speech
+
+speech.say('Hello, world. How are you?')
+```
+
 
 ---
 

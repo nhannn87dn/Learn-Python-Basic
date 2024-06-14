@@ -10,7 +10,6 @@ Trên bo mạch micro:bit có chứa 2 nút nhấn A, B, và một biểu tượ
 
 ![microbit](img/microbit-1.png)
 
-### 🔥 Button A
 
 Bạn sẽ code như sau
 
@@ -18,36 +17,29 @@ Bạn sẽ code như sau
 from microbit import *
 
 while True:
-    if button_a.was_pressed(): # Nếu phím A được nhấn
-        display.scroll('A') # Hiện thị chữ A
+    # 🔥 Nếu phím A đang được nhấn (Tiếp diễn)
+    if button_a.is_pressed(): 
+        display.scroll('A is') # Hiện thị chữ A
+    
+    # 🔥 Nếu phím A đã được nhấn trước đó. (Quá khứ)
+    if button_a.was_pressed(): 
+        display.scroll('A was') # Hiện thị chữ A
+
+    # 🔥 Nếu phím B đang được nhấn (Tiếp diễn)
+    if button_b.is_pressed(): 
+        display.scroll('B is') # Hiện thị chữ B
+
+    # 🔥 Nếu phím B đã được nhấn trước đó. (Quá khứ)
+    if button_b.was_pressed(): 
+        display.scroll('B was') # Hiện thị chữ B
+
+    #🔥 Đang nhấn A+B cùng lúc (Tiếp diễn)
+    if button_b.is_pressed() and button_b.is_pressed():
+        display.scroll('AB pressed')
 ```
 
 Dùng vòng lặp while, với biểu thức điều kiện luôn là `True` để sẵn sàng thực hiện câu lệnh bên trong khối if, khi phím A được nhấn.
 
-
-### 🔥 Button B
-
-Tương tự cho phím B
-
-```python
-from microbit import *
-
-while True:
-    if button_b.was_pressed(): # Nếu phím B được nhấn
-        display.scroll('B') # Hiện thị chữ B
-```
-
-### 🔥 Button A+B
-
-Khi nhấn đồng thời cả A và B
-
-```python
-from microbit import *
-
-while True:
-    if button_a.was_pressed() or button_b.was_pressed():
-        display.scroll('A or B')
-```
 
 ### 🔥 Chạm Logo
 

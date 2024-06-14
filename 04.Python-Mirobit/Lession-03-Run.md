@@ -54,22 +54,26 @@ from rekabit import *
 
 while True:
 	#Move forward at full speed - Chạy tới
-	run_motor(Motor_All, Direction_Forward, speed=255) 
+	run_motor(Motor_All, Direction_Forward, speed=128) 
 	sleep(1000)
+  brake_motor(Motor_All)
 	
 	#Move backward at half speed - Chạy lùi
 	run_motor(Motor_All, Direction_Backward, speed=128) 
 	sleep(1000)
+  brake_motor(Motor_All)
 	
 	#Turn left at full speed - Rẻ trái
-	run_motor(Motor_M1, Direction_Backward, speed=255 )
-	run_motor(Motor_M2, Direction_Forward, speed=255 )
+	run_motor(Motor_M1, Direction_Backward, speed=128 )
+	run_motor(Motor_M2, Direction_Forward, speed=128 )
 	sleep(1000)
+  brake_motor(Motor_All)
 	
 	#Turn right at half speed - Rẻ phải
 	run_motor(Motor_M1, Direction_Forward, speed=128 )
 	run_motor(Motor_M2, Direction=Backward, speed=128 )
 	sleep(1000)
+  brake_motor(Motor_All)
 	
 	#Brake both motors - Phanh
 	brake_motor(Motor_All)
@@ -139,8 +143,8 @@ Hiển thị mỗi LED mỗi màu riêng
 
 
 ```python
-np[0]= 255,0,0    #red
-np[1]= 255,255,0  #yellow
+np[0]= (255,0,0)    #red
+np[1]= (0, 0, 255)  #blue
 np.show()
 ```
 
@@ -152,16 +156,16 @@ np.clear()
 
 Một số màu cơ bản theo hệ RGB:
 
-- **Red**: `rgb(255, 0, 0)` ![#ff0000](https://via.placeholder.com/15/ff0000/000000?text=+)
-- **Orange**: `rgb(255, 164, 0)` ![#ffa400](https://via.placeholder.com/15/ffa400/000000?text=+)
-- **Yellow**: `rgb(255, 255, 0)` ![#ffff00](https://via.placeholder.com/15/ffff00/000000?text=+)
-- **Green**: `rgb(0, 255, 0)` ![#00ff00](https://via.placeholder.com/15/00ff00/000000?text=+)
-- **Blue**: `rgb(0, 0, 255)` ![#0000ff](https://via.placeholder.com/15/0000ff/000000?text=+)
-- **Indigo**: `rgb(75, 0, 130)` ![#4b0082](https://via.placeholder.com/15/4b0082/000000?text=+)
-- **Violet**: `rgb(138, 43, 226)` ![#8a2be2](https://via.placeholder.com/15/8a2be2/000000?text=+)
-- **Purple**: `rgb(255, 0, 255)` ![#ff00ff](https://via.placeholder.com/15/ff00ff/000000?text=+)
-- **White**: `rgb(255, 255, 255)` ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=+)
-- **Black**: `rgb(0, 0, 0)` ![#000000](https://via.placeholder.com/15/000000/000000?text=+)
+- **Red**: `(255, 0, 0)` ![#ff0000](https://via.placeholder.com/15/ff0000/000000?text=+)
+- **Orange**: `(255, 164, 0)` ![#ffa400](https://via.placeholder.com/15/ffa400/000000?text=+)
+- **Yellow**: `(255, 255, 0)` ![#ffff00](https://via.placeholder.com/15/ffff00/000000?text=+)
+- **Green**: `(0, 255, 0)` ![#00ff00](https://via.placeholder.com/15/00ff00/000000?text=+)
+- **Blue**: `(0, 0, 255)` ![#0000ff](https://via.placeholder.com/15/0000ff/000000?text=+)
+- **Indigo**: `(75, 0, 130)` ![#4b0082](https://via.placeholder.com/15/4b0082/000000?text=+)
+- **Violet**: `(138, 43, 226)` ![#8a2be2](https://via.placeholder.com/15/8a2be2/000000?text=+)
+- **Purple**: `(255, 0, 255)` ![#ff00ff](https://via.placeholder.com/15/ff00ff/000000?text=+)
+- **White**: `(255, 255, 255)` ![#ffffff](https://via.placeholder.com/15/ffffff/000000?text=+)
+- **Black**: `(0, 0, 0)` ![#000000](https://via.placeholder.com/15/000000/000000?text=+)
 
 
 ## 💛 Điều khiển qua sóng Radio
@@ -235,12 +239,7 @@ Sử dụng zoom:bit giả làm một xe cảnh sát với yêu cầu chương t
 
 Ngoài ra:
 
-Để tăng sự thu hút của mọi người
-và nhường đường để xe chạy, bạn
-có thể vừa cho đèn RGB LED nhấp
-nháy liên tục 2 màu Xanh Đỏ vừa
-phát ra tiếng còi báo động bằng các
-khối âm thanh
+Để tăng sự thu hút của mọi người và nhường đường để xe chạy, bạn có thể vừa cho đèn RGB LED nhấp nháy liên tục 2 màu Xanh Đỏ vừa phát ra tiếng còi báo động bằng các khối âm thanh
 
 
 ### 🔥 Task 2 - Điều khiển xe với Radio
