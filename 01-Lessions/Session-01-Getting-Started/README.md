@@ -1,145 +1,197 @@
 # Session 01 - Giới thiệu về Python
 
-## 1. Tổng quan về Python (15 phút)
+## 1. Giới Thiệu về Python
 
-### 1.1 Giới thiệu về Python và lịch sử phát triển
+**Python** là một ngôn ngữ lập trình cấp cao, dễ học, và linh hoạt. Được thiết kế với cú pháp rõ ràng và dễ đọc, Python là ngôn ngữ lập trình tuyệt vời cho cả người mới học và các chuyên gia. Python được sử dụng rộng rãi trong nhiều lĩnh vực như phát triển web, khoa học dữ liệu, học máy, trí tuệ nhân tạo, tự động hóa, và nhiều hơn nữa.
 
-- Python là ngôn ngữ lập trình thông dịch, mạnh mẽ và dễ học được tạo ra bởi Guido van Rossum vào năm 1989.
-- Python được thiết kế với nguyên tắc đơn giản, dễ đọc và dễ hiểu, nhằm tăng tính khả đọc và khả bảo trì của mã nguồn.
-- Python là ngôn ngữ mã nguồn mở, có cộng đồng lớn và hỗ trợ đa nền tảng, giúp phát triển ứng dụng trên nhiều hệ điều hành khác nhau.
+## 2. Cài Đặt Python
 
-### 1.2 Ưu điểm và ứng dụng của Python
+### Trên Windows
+1. Tải Python từ trang web chính thức: [python.org](https://www.python.org/downloads/).
+2. Chạy file cài đặt và nhớ chọn tùy chọn “Add Python to PATH”.
+3. Hoàn tất quá trình cài đặt.
 
-- Python có cú pháp đơn giản, gần gũi với ngôn ngữ tự nhiên, dễ học và dễ sử dụng.
-- Python hỗ trợ nhiều thư viện và module mạnh mẽ, giúp giải quyết các tác vụ phức tạp một cách hiệu quả.
-- Python là một ngôn ngữ đa năng, được sử dụng rộng rãi trong nhiều lĩnh vực như phân tích dữ liệu, trí tuệ nhân tạo, lập trình web, thiết kế giao diện, và nhiều hơn nữa.
-- Python có cộng đồng lớn và phong phú, hỗ trợ người dùng thông qua tài liệu, diễn đàn và thư viện mã nguồn mở.
+### Trên macOS
+1. Mở Terminal và cài đặt Homebrew nếu chưa có: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+2. Cài đặt Python bằng Homebrew: `brew install python`
 
-### 1.3 So sánh Python với các ngôn ngữ lập trình khác
+### Trên Linux
+1. Mở Terminal.
+2. Cài đặt Python bằng trình quản lý gói của hệ điều hành. Ví dụ trên Ubuntu:
+   ```bash
+   sudo apt update
+   sudo apt install python3
+   ```
 
-1.3 So sánh Python với các ngôn ngữ lập trình khác
+## 3. Chạy Python
 
-Python là một ngôn ngữ lập trình mạnh mẽ và linh hoạt, được so sánh và sử dụng rộng rãi trong nhiều lĩnh vực khác nhau. Dưới đây là một số so sánh giữa Python và các ngôn ngữ lập trình khác như C, Java và JavaScript:
+Bạn có thể chạy Python theo nhiều cách:
+- **Interactive Interpreter**: Mở Terminal hoặc Command Prompt, gõ `python` hoặc `python3` và bạn sẽ vào môi trường tương tác của Python.
+- **Chạy Script**: Viết mã Python vào một file có đuôi `.py`, sau đó chạy bằng cách gõ `python script.py` trong Terminal hoặc Command Prompt.
 
-1.3.1 So sánh Python với C:
-- Ưu điểm của Python so với C:
-  - Cú pháp đơn giản và dễ hiểu hơn.
-  - Hỗ trợ tự động quản lý bộ nhớ, giúp tránh các lỗi gây ra bởi việc quản lý bộ nhớ thủ công trong C.
-  - Có nhiều thư viện mạnh mẽ và module bên thứ ba, giúp phát triển nhanh chóng và tiết kiệm thời gian.
-- Nhược điểm của Python so với C:
-  - Tốc độ thực thi chậm hơn do quá trình phiên dịch và kiểm tra kiểu dữ liệu.
-  - Không phù hợp cho các ứng dụng yêu cầu hiệu năng cao hoặc lập trình nhúng.
+## 4. Viết Chương Trình Python Đầu Tiên
 
-1.3.2 So sánh Python với Java:
-- Ưu điểm của Python so với Java:
-  - Cú pháp đơn giản và dễ hiểu hơn, giúp giảm thời gian và công sức phát triển.
-  - Có sẵn một loạt các thư viện và framework mạnh mẽ, giúp phát triển ứng dụng nhanh chóng.
-  - Tính di động cao, có thể chạy trên nhiều hệ điều hành khác nhau.
-- Nhược điểm của Python so với Java:
-  - Tốc độ thực thi chậm hơn và tài nguyên tiêu tốn cao hơn.
-  - Kiểm soát kiểu dữ liệu không nghiêm ngặt như trong Java.
+Mở một trình soạn thảo văn bản (như Notepad, Sublime Text, hoặc Visual Studio Code) và viết chương trình đơn giản sau vào một file có đuôi `.py`:
 
-1.3.3 So sánh Python với JavaScript:
+```python
+print("Hello, World!")
+```
 
-- Ưu điểm của Python so với JavaScript:
-  - Cú pháp đơn giản và dễ hiểu hơn, giúp giảm thời gian và công sức phát triển.
-  - Có thể sử dụng cả phía máy chủ và phía khách hàng, đồng thời giúp tạo ra các ứng dụng web đa nền tảng.
-  - Có nhiều thư viện và framework mạnh mẽ, giúp phát triển ứng dụng web dễ dàng.
-- Nhược điểm của Python so với JavaScript:
-  - Tốc độ thực thi chậm hơn trong một số trường h
+Lưu file với tên `hello.py` và chạy nó trong Terminal hoặc Command Prompt:
 
-ợp.
-  - Không thể chạy trực tiếp trên trình duyệt, cần có trình thông dịch hoặc máy ảo để chạy mã Python trên phía khách hàng.
+```bash
+python hello.py
+```
 
-Các dự án và ứng dụng nổi tiếng được xây dựng bằng Python:
-- Django: Framework phát triển ứng dụng web mạnh mẽ và linh hoạt.
-- Flask: Framework nhẹ và dễ sử dụng cho phát triển ứng dụng web.
-- NumPy và SciPy: Thư viện tính toán khoa học và xử lý dữ liệu mạnh mẽ.
-- Pandas: Thư viện phân tích và xử lý dữ liệu.
-- TensorFlow và PyTorch: Frameworks học máy và trí tuệ nhân tạo.
-- YouTube, Instagram, Dropbox: Các ứng dụng nổi tiếng đã sử dụng Python trong quá trình phát triển.
+## 5. Cú Pháp Cơ Bản của Python
 
+### Biến và Kiểu Dữ Liệu
 
----
+```python
+# Biến số nguyên
+x = 5
 
-## 2. Cài đặt Python và thiết lập môi trường phát triển (30 phút)
+# Biến số thập phân
+y = 3.14
 
-### 2.1 Giới thiệu về các phiên bản Python
+# Biến chuỗi
+name = "Alice"
 
-- Giới thiệu về các phiên bản Python phổ biến như Python 2.x và Python 3.x.
-- Giải thích sự khác biệt giữa các phiên bản và lựa chọn phiên bản phù hợp.
+# Biến boolean
+is_valid = True
+```
 
-### 2.2 Hướng dẫn cài đặt Python trên hệ điều hành Windows
+### Toán Tử
 
-1. Truy cập trang web chính thức của Python (https://www.python.org) và tải xuống bản cài đặt phù hợp với hệ điều hành Windows.
-2. Chạy tệp tin cài đặt và tuân theo các bước hướng dẫn để hoàn tất quá trình cài đặt Python.
-3. Kiểm tra cài đặt bằng cách mở cửa sổ Command Prompt và chạy lệnh `python --version`.
+```python
+# Toán tử số học
+a = 10 + 5  # Cộng
+b = 10 - 5  # Trừ
+c = 10 * 5  # Nhân
+d = 10 / 5  # Chia
+e = 10 % 3  # Chia lấy dư
+f = 10 ** 2 # Lũy thừa
 
-### 2.3 Hướng dẫn cài đặt Python trên hệ điều hành macOS
+# Toán tử so sánh
+print(a == b)  # Bằng
+print(a != b)  # Không bằng
+print(a > b)   # Lớn hơn
+print(a < b)   # Nhỏ hơn
+print(a >= b)  # Lớn hơn hoặc bằng
+print(a <= b)  # Nhỏ hơn hoặc bằng
+```
 
-1. Mở Terminal trên máy tính Mac.
-2. Sử dụng Homebrew để cài đặt Python bằng cách chạy lệnh `brew install python`.
-3. Kiểm tra cài đặt bằng cách chạy lệnh `python3 --version`.
+### Cấu Trúc Điều Khiển
 
-### 2.4 Hướng dẫn cài đặt Python trên hệ điều hành Linux
+```python
+# Câu lệnh if
+age = 18
+if age >= 18:
+    print("Bạn là người lớn.")
+else:
+    print("Bạn là trẻ em.")
 
-1. Mở Terminal trên máy tính Linux.
-2. Sử dụng trình quản lý gói của hệ điều hành để cài đặt Python, ví dụ như `apt` cho Ubuntu hoặc `yum` cho CentOS.
-3. Kiểm tra cài đặt bằng cách chạy lệnh `python3 --version`.
+# Vòng lặp for
+for i in range(5):
+    print(i)
 
-### 2.5 Cài đặt trình biên dịch và trình chỉnh sửa code
+# Vòng lặp while
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+```
 
-- Giới thiệu về trình biên dịch (interpreter) và trình chỉnh sửa code phổ biến như Visual Studio Code, PyCharm, Sublime Text.
-- Hướng dẫn cài đặt một trong những trình chỉnh sửa code trên máy tính của sinh viên.
+## 6. Hàm trong Python
 
-### 2.6 Thiết lập môi trường ảo (virtual environment)
+### Định Nghĩa và Gọi Hàm
 
-- Giới thiệu về môi trường ảo và lợi ích của việc sử dụng môi trường ảo trong phát triển Python.
-- Hướng dẫn cài đặt và sử dụng công cụ `virtualenv` để tạo môi trường ảo.
+```python
+def say_hello(name):
+    print(f"Hello, {name}!")
 
+say_hello("Alice")
+```
 
+### Hàm với Giá Trị Trả Về
 
----
+```python
+def add(a, b):
+    return a + b
 
+result = add(5, 3)
+print(result)  # Kết quả: 8
+```
 
-## 3. Chạy chương trình Python đầu tiên (15 phút)
+## 7. Làm Việc với Danh Sách
 
-### 3.1 Giới thiệu Extension Python cho VSCode
+### Tạo và Truy Cập Phần Tử
 
-- Cài đặt Extension Python cho VSCode
-- Extension Python - một công cụ cho phép thực thi mã nguồn Python.
+```python
+# Tạo danh sách
+numbers = [1, 2, 3, 4, 5]
 
-### 3.2 Viết và chạy chương trình Python đơn giản
+# Truy cập phần tử
+print(numbers[0])  # Kết quả: 1
 
-1. Mở IDLE hoặc trình chỉnh sửa code được cài đặt trước đó.
-2. Tạo một tệp tin mới và lưu nó với phần mở rộng `.py` (ví dụ: `hello.py`).
-3. Viết chương trình Python đơn giản để in ra màn hình dòng chữ "Hello, Python!".
-4. Lưu tệp tin và chạy chương trình bằng cách nhấn phím F5 hoặc chọn "Run" từ menu.
+# Thay đổi phần tử
+numbers[1] = 20
+print(numbers)  # Kết quả: [1, 20, 3, 4, 5]
+```
 
-### 3.3 Giải thích cú pháp cơ bản của Python
+### Thêm, Xóa và Duyệt Phần Tử
 
-- Giới thiệu cú pháp cơ bản của Python như khai báo biến, in ra màn hình, điều khiển luồng, vòng lặp và hàm.
-- Cung cấp ví dụ minh họa và giải thích cách sử dụng cú pháp trong các trường hợp cụ thể.
+```python
+# Thêm phần tử
+numbers.append(6)
+print(numbers)  # Kết quả: [1, 20, 3, 4, 5, 6]
 
-### 3.4 Tài liệu tham khảo và tài nguyên học tập
+# Xóa phần tử
+numbers.remove(20)
+print(numbers)  # Kết quả: [1, 3, 4, 5, 6]
 
-- Giới thiệu các tài liệu tham khảo và tài nguyên học tập về Python như tài liệu trực tuyến, sách và khóa học trực tuyến.
-- Chính thống: <https://docs.python.org/3/tutorial/index.html>
+# Duyệt phần tử
+for number in numbers:
+    print(number)
+```
 
-- W3School: <https://www.w3schools.com/python/python_intro.asp>
+## 8. Làm Việc với Từ Điển
 
-## IV. Bài tập và thảo luận (15 phút)
+### Tạo và Truy Cập Giá Trị
 
-- Yêu cầu sinh viên thực hành viết và chạy chương trình Python đơn giản.
-- Thảo luận và giải đáp các câu hỏi liên quan đến giới thiệu về Python và quá trình cài đặt.
+```python
+# Tạo từ điển
+person = {
+    "name": "Alice",
+    "age": 25,
+    "city": "New York"
+}
 
-## V. Tổng kết và đánh giá (5 phút)
+# Truy cập giá trị
+print(person["name"])  # Kết quả: Alice
 
-- Tóm tắt lại nội dung đã học trong buổi.
-- Nhắc lại các lợi ích của việc học Python và môi trường phát triển.
-- Thực hiện đánh giá sự hiểu biết của sinh viên qua câu hỏi hoặc bài kiểm tra nhỏ.
+# Thay đổi giá trị
+person["age"] = 26
+print(person)  # Kết quả: {'name': 'Alice', 'age': 26, 'city': 'New York'}
+```
 
-## VI. Hướng dẫn cho Buổi 2 (5 phút)
+## 9. Làm Việc với Tệp
 
-- Giới thiệu chủ đề và nội dung của buổi 2.
-- Nhắc lại các yêu cầu chuẩn bị trước buổi học tới.
+### Đọc Tệp
+
+```python
+with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)
+```
+
+### Ghi Tệp
+
+```python
+with open("example.txt", "w") as file:
+    file.write("Hello, World!")
+```
+
+## 10. Kết Luận
+
+Python là một ngôn ngữ lập trình mạnh mẽ và dễ học, phù hợp cho cả người mới bắt đầu và các lập trình viên chuyên nghiệp. Hy vọng bài giảng này giúp bạn bắt đầu với Python và khám phá nhiều khả năng của ngôn ngữ này.

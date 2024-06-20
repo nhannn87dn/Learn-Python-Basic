@@ -1,274 +1,302 @@
-# Buổi 2: Cú pháp và Biến trong Python
+# Buổi 2: Biến trong Python
 
 Trong buổi học này, chúng ta sẽ tìm hiểu về cú pháp cơ bản của Python, cách làm việc với biến và kiểu dữ liệu, và thực hiện các phép toán số học. Điều này sẽ giúp bạn hiểu rõ hơn về cách sử dụng Python để thực hiện các tác vụ cơ bản trong lập trình.
 
-## I. Cú pháp cơ bản của Python
 
-### A. Khai báo biến
+Chắc chắn rồi! Dưới đây là bài giảng về biến và kiểu dữ liệu của biến trong Python, kèm theo các ví dụ minh họa.
 
-Khai báo biến là một trong những khái niệm cơ bản nhất trong Python. Để khai báo biến, bạn có thể sử dụng dấu bằng (=) để gán giá trị cho biến. Ví dụ:
+## Biến trong Python
 
-```python
-x = 5
-y = "Hello, world!"
-```
+### Định nghĩa Biến
 
-#### 1. Gán giá trị cho biến
+Biến là tên được sử dụng để lưu trữ giá trị trong bộ nhớ của máy tính. Khi khai báo một biến, bạn có thể gán một giá trị cho biến đó.
 
-Để gán giá trị cho biến, bạn chỉ cần sử dụng dấu bằng (=) và đặt giá trị cần gán bên phải dấu bằng. Ví dụ:
+### Cú pháp Khai báo Biến
 
 ```python
-x = 5
-y = "Hello, world!"
+variable_name = value
 ```
 
-#### 2. Quy tắc đặt tên biến
+- `variable_name`: Tên biến, phải tuân theo quy tắc đặt tên biến (bắt đầu bằng chữ cái hoặc dấu gạch dưới `_`, không chứa khoảng trắng và không trùng với từ khóa của Python).
+- `value`: Giá trị bạn muốn gán cho biến.
 
-Khi đặt tên biến, bạn cần tuân thủ một số quy tắc sau:
-
-- Tên biến phải bắt đầu bằng một chữ cái hoặc dấu gạch dưới ().
-- Tên biến không được bắt đầu bằng một số.
-- Tên biến chỉ có thể chứa các ký tự chữ cái, số và dấu gạch dưới ().
-- Tên biến phân biệt chữ hoa và chữ thường.
-
-### B. In ra màn hình
-
-Để in ra màn hình trong Python, bạn có thể sử dụng hàm print(). Ví dụ:
-
-```python
-print("Hello, world!")
-```
-
-#### 1. Sử dụng hàm print()
-
-Để in ra màn hình, bạn chỉ cần sử dụng hàm print() và đặt nội dung cần in trong dấu ngoặc kép. Ví dụ:
-
-
-```python
-print("Hello, world!")
-```
-
-#### 2. Định dạng chuỗi với f-strings
-
-Để định dạng chuỗi trong Python, bạn có thể sử dụng f-strings. F-strings là một cách đơn giản và dễ đọc để định dạng chuỗi trong Python. Ví dụ:
+### Ví dụ Khai báo Biến
 
 ```python
 name = "Alice"
-age = 25
-print(f"My name is {name} and I am {age} years old.")
+age = 30
+height = 1.75
+is_student = True
 ```
 
-### C. Điều khiển luồng
+## Kiểu Dữ liệu của Biến
 
-Điều khiển luồng là một khái niệm quan trọng trong lập trình. Trong Python, bạn có thể sử dụng câu lệnh if, else, elif để điều khiển luồng. Ví dụ:
+Python có nhiều kiểu dữ liệu khác nhau để biểu diễn các loại thông tin khác nhau. Dưới đây là các kiểu dữ liệu cơ bản trong Python, kèm theo ví dụ.
+
+### 1. Kiểu Dữ liệu Số (Numeric Types)
+
+#### a. Số nguyên (int)
+
+Là các số nguyên, không có phần thập phân.
 
 ```python
-x = 5
-if x > 0:
-    print("x is positive")
-elif x < 0:
-    print("x is negative")
-else:
-    print("x is zero")
+x = 10
+y = -5
 ```
 
-#### 1. Câu lệnh if, else, elif
+#### b. Số thực (float)
 
-Câu lệnh if, else, elif được sử dụng để kiểm tra một điều kiện nào đó và thực hiện một hành động tương ứng. Ví dụ:
+Là các số có phần thập phân.
 
 ```python
-x = 5
-if x > 0:
-    print("x is positive")
-elif x < 0:
-    print("x is negative")
-else:
-    print("x is zero")
+pi = 3.14
+e = 2.718
 ```
 
-#### 2. Toán tử so sánh (==, !=, >, <, >=, <=)
+#### c. Số phức (complex)
 
-Toán tử so sánh được sử dụng để so sánh hai giá trị với nhau. Ví dụ:
+Là các số có phần thực và phần ảo.
 
 ```python
-x = 5
-y = 10
-if x < y:
-    print("x is less than y")
+z = 1 + 2j
 ```
 
-#### 3. Toán tử logic (and, or, not)
+### 2. Kiểu Dữ liệu Chuỗi (String)
 
-Toán tử logic được sử dụng để kết hợp các điều kiện với nhau. Ví dụ:
+Là các dãy ký tự, thường được đặt trong dấu nháy đơn hoặc nháy kép.
 
 ```python
-x = 5
-y = 10
-if x > 0 and y > 0:
-    print("Both x and y are positive")
+greeting = "Hello, world!"
+name = 'Alice'
 ```
 
-### D. Vòng lặp
+Chú ý: Chuỗi trong Python là bất biến (immutable), tức là không thể thay đổi sau khi đã tạo ra.
 
-Vòng lặp là một khái niệm quan trọng trong lập trình. Trong Python, bạn có thể sử dụng vòng lặp for và while để lặp lại một hành động nhiều lần. Ví dụ:
+### 3. Kiểu Dữ liệu Boolean
+
+Chỉ có hai giá trị: `True` và `False`.
 
 ```python
-for i in range(5):
-    print(i)
+is_raining = False
+is_sunny = True
 ```
 
-#### 1. Vòng lặp for
+### 4. Kiểu Dữ liệu Danh sách (List)
 
-Vòng lặp for được sử dụng để lặp lại một hành động nhiều lần với một danh sách các giá trị. Ví dụ:
+Là một dãy các giá trị có thể thay đổi (mutable), được đặt trong cặp dấu ngoặc vuông `[]`.
 
 ```python
-for i in range(5):
-    print(i)
+fruits = ["apple", "banana", "cherry"]
+numbers = [1, 2, 3, 4, 5]
 ```
 
-#### 2. Vòng lặp while
+### 5. Kiểu Dữ liệu Bộ (Tuple)
 
-Vòng lặp while được sử dụng để lặp lại một hành động nhiều lần cho đến khi một điều kiện nào đó không còn đúng nữa. Ví dụ:
-
+Là một dãy các giá trị không thể thay đổi (immutable), được đặt trong cặp dấu ngoặc đơn `()`.
 
 ```python
-i = 0
-while i < 5:
-    print(i)
-    i += 1
+coordinates = (10.0, 20.0)
+colors = ("red", "green", "blue")
 ```
 
-#### 3. Toán tử break và continue
+### 6. Kiểu Dữ liệu Tập hợp (Set)
 
-Toán tử break được sử dụng để kết thúc vòng lặp ngay lập tức, trong khi toán tử continue được sử dụng để bỏ qua một vòng lặp và tiếp tục với vòng lặp tiếp theo. Ví dụ:
-
+Là một tập hợp các giá trị duy nhất, không thứ tự, được đặt trong cặp dấu ngoặc nhọn `{}`.
 
 ```python
-for i in range(10):
-    if i == 5:
-        break
-    elif i % 2 == 0:
-        continue
-    print(i)
+unique_numbers = {1, 2, 3, 4, 5}
+unique_fruits = {"apple", "banana", "cherry"}
 ```
 
-## II. Làm việc với biến và kiểu dữ liệu
+### 7. Kiểu Dữ liệu Từ điển (Dictionary)
 
-### A. Kiểu dữ liệu cơ bản
-
-Trong Python, có bốn kiểu dữ liệu cơ bản: số nguyên (int), số thực (float), chuỗi ký tự (str) và boolean (bool). Ví dụ:
-
+Là một tập hợp các cặp khóa-giá trị, được đặt trong cặp dấu ngoặc nhọn `{}`.
 
 ```python
-x = 5
-y = 3.14
-z = "Hello, world!"
-w = True
+person = {"name": "Alice", "age": 30, "city": "New York"}
 ```
 
-#### 1. Số nguyên (int)
+## Kiểm tra Kiểu Dữ liệu của Biến
 
-Số nguyên là một kiểu dữ liệu cơ bản trong Python, được sử dụng để lưu trữ các số nguyên. Ví dụ:
+Bạn có thể sử dụng hàm `type()` để kiểm tra kiểu dữ liệu của một biến.
 
-
-```python
-x = 5
-```
-
-#### 2. Số thực (float)
-
-Số thực là một kiểu dữ liệu cơ bản trong Python, được sử dụng để lưu trữ các số thực. Ví dụ:
+### Ví dụ
 
 ```python
-y = 3.14
-```
+x = 10
+print(type(x))  # Output: <class 'int'>
 
-#### 3. Chuỗi ký tự (str)
+pi = 3.14
+print(type(pi))  # Output: <class 'float'>
 
-Chuỗi ký tự là một kiểu dữ liệu cơ bản trong Python, được sử dụng để lưu trữ các chuỗi ký tự. Ví dụ:
+name = "Alice"
+print(type(name))  # Output: <class 'str'>
 
-```python
-z = "Hello, world!"
+is_student = True
+print(type(is_student))  # Output: <class 'bool'>
+
+fruits = ["apple", "banana", "cherry"]
+print(type(fruits))  # Output: <class 'list'>
+
+coordinates = (10.0, 20.0)
+print(type(coordinates))  # Output: <class 'tuple'>
+
+unique_fruits = {"apple", "banana", "cherry"}
+print(type(unique_fruits))  # Output: <class 'set'>
+
+person = {"name": "Alice", "age": 30, "city": "New York"}
+print(type(person))  #
 
 ```
 
-#### 4. Boolean (bool)
+---
 
-Boolean là một kiểu dữ liệu cơ bản trong Python, được sử dụng để lưu trữ các giá trị đúng hoặc sai. Ví dụ:
+## Toán tử Số học trong Python
+
+Toán tử số học là những ký hiệu được sử dụng để thực hiện các phép toán cơ bản như cộng, trừ, nhân, chia, v.v. Dưới đây là danh sách các toán tử số học cơ bản trong Python:
+
+1. **Cộng (+)**
+2. **Trừ (-)**
+3. **Nhân (*)**
+4. **Chia (/)**
+5. **Chia lấy phần nguyên (//)**
+6. **Lấy phần dư (%)**
+7. **Lũy thừa (**)**
+
+### 1. Toán tử Cộng (+)
+
+Phép cộng hai số.
+
+#### Ví dụ:
 
 ```python
-w = True
-
+a = 10
+b = 5
+result = a + b
+print(result)  # Output: 15
 ```
 
-### B. Ép kiểu dữ liệu
+### 2. Toán tử Trừ (-)
 
-Trong Python, bạn có thể ép kiểu dữ liệu từ một kiểu sang một kiểu khác. Có hai loại ép kiểu dữ liệu: ép kiểu ngầm định và ép kiểu tường minh.
+Phép trừ hai số.
 
-#### 1. Ép kiểu ngầm định
-
-Ép kiểu ngầm định là quá trình ép kiểu dữ liệu tự động bởi Python. Ví dụ:
+#### Ví dụ:
 
 ```python
-x = 5
-y = 3.14
-z = x + y
+a = 10
+b = 5
+result = a - b
+print(result)  # Output: 5
 ```
 
-#### 2. Ép kiểu tường minh
+### 3. Toán tử Nhân (*)
 
-Ép kiểu tường minh là quá trình ép kiểu dữ liệu được thực hiện bởi người lập trình. Ví dụ:
+Phép nhân hai số.
+
+#### Ví dụ:
 
 ```python
-x = 5
-y = str(x)
+a = 10
+b = 5
+result = a * b
+print(result)  # Output: 50
 ```
 
-## III. Thực hiện các phép toán số học
+### 4. Toán tử Chia (/)
 
-Trong Python, bạn có thể thực hiện các phép toán số học như phép cộng, trừ, nhân, chia, chia lấy phần nguyên, chia lấy phần dư, lũy thừa và căn bậc hai.
+Phép chia hai số, kết quả là số thực.
 
-### A. Phép cộng, trừ, nhân, chia
-
-Phép cộng, trừ, nhân, chia là các phép toán số học cơ bản trong Python. Ví dụ:
+#### Ví dụ:
 
 ```python
-x = 5
-y = 3
-print(x + y) # Output: 8
-print(x - y) # Output: 2
-print(x * y) # Output: 15
-print(x / y) # Output: 1.6666666666666667
-
+a = 10
+b = 4
+result = a / b
+print(result)  # Output: 2.5
 ```
 
-### B. Chia lấy phần nguyên và chia lấy phần dư
+### 5. Toán tử Chia lấy phần nguyên (//)
 
-Chia lấy phần nguyên và chia lấy phần dư là hai phép toán số học đặc biệt trong Python. Ví dụ:
+Phép chia hai số, kết quả là phần nguyên của phép chia.
+
+#### Ví dụ:
 
 ```python
-x = 5
-y = 3
-print(x // y) # Output: 1
-print(x % y) # Output: 2
+a = 10
+b = 4
+result = a // b
+print(result)  # Output: 2
 ```
 
-### C. Lũy thừa và căn bậc hai
+### 6. Toán tử Lấy phần dư (%)
 
-Lũy thừa và căn bậc hai là hai phép toán số học đặc biệt trong Python. Ví dụ:
+Phép chia lấy phần dư của hai số.
+
+#### Ví dụ:
 
 ```python
-x = 5
-print(x ** 2) # Output: 25
-print(x ** 0.5) # Output: 2.23606797749979
+a = 10
+b = 4
+result = a % b
+print(result)  # Output: 2
 ```
 
-### D. Toán tử modulo
+### 7. Toán tử Lũy thừa (**)
 
-Toán tử modulo là một phép toán số học đặc biệt trong Python, được sử dụng để tính toán phần dư của một phép chia. Ví dụ:
+Phép lấy lũy thừa của một số.
+
+#### Ví dụ:
 
 ```python
-x = 5
-y = 3
-print(x % y) # Output: 2
+a = 2
+b = 3
+result = a ** b
+print(result)  # Output: 8
+```
+
+## Các Ví dụ Tổng hợp
+
+Dưới đây là một số ví dụ tổng hợp về việc sử dụng các toán tử số học trong Python.
+
+### Ví dụ 1: Tính toán đơn giản
+
+```python
+x = 15
+y = 4
+
+# Cộng
+print("x + y =", x + y)  # Output: x + y = 19
+
+# Trừ
+print("x - y =", x - y)  # Output: x - y = 11
+
+# Nhân
+print("x * y =", x * y)  # Output: x * y = 60
+
+# Chia
+print("x / y =", x / y)  # Output: x / y = 3.75
+
+# Chia lấy phần nguyên
+print("x // y =", x // y)  # Output: x // y = 3
+
+# Lấy phần dư
+print("x % y =", x % y)  # Output: x % y = 3
+
+# Lũy thừa
+print("x ** y =", x ** y)  # Output: x ** y = 50625
+```
+
+### Ví dụ 2: Tính toán với biến và kết hợp toán tử
+
+```python
+a = 7
+b = 3
+
+# Kết hợp các toán tử
+result = (a + b) * (a - b)
+print("(a + b) * (a - b) =", result)  # Output: (a + b) * (a - b) = 40
+
+# Tính toán phức tạp hơn
+result = a ** 2 + b ** 2 - 2 * a * b
+print("a^2 + b^2 - 2ab =", result)  # Output: a^2 + b^2 - 2ab = 16
 ```
