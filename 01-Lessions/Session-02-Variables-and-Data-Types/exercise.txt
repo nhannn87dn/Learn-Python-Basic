@@ -1,0 +1,18 @@
+Task 1: Đặt một biến = tên của mình
+
+Task 2: Đặt một biến = tuổi của mình
+
+Task 3: Đặt một biến = giá của cuốn sách bạn mua
+
+Task 4: In ra kiểu dữ liệu các biến nói trên
+
+Task 5:
+a = 5
+b = 2
+Tính và in ra kết quả các phép tính
+số học trong Python.
+
+Task 6: 
+i = '5'
+j = '2'
+Tính tổng i và j (Kết quả = 7)
