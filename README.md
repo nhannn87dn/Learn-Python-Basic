@@ -14,15 +14,20 @@
 - Tìm hiểu các toán tử số học
 - Bài tập ứng dụng
 
-## Buổi 3: Toán tử, if và Vòng lặp
+## Buổi 3: Toán tử Logic, if else
 
 - Toán tử Logic, so sánh
 - Câu lệnh điều kiện (`if`, `else`, `elif`).
+- Bài tập ứng dụng
+
+## Buổi 4: Kiểu dữ liệu Range,  Vòng lặp
+
+- Kiểu dữ liệu Range
 - Cấu trúc lặp (`while`, `for`).
 - Câu lệnh `break` và `continue`.
 - Bài tập ứng dụng
 
-## Buổi 4: Hàm và Module
+## Buổi 5: Hàm và Module
 
 - Định nghĩa và cách sử dụng hàm.
 - Tham số và đối số.
@@ -30,48 +35,64 @@
 - Tự định nghĩa một module
 - Bài tập ứng dụng
 
-## Buổi 5: Lập trình hướng đối tượng OOP
+## Buổi 6: Review Lession 1-4
+
+- Hệ thống lại kiến thức đã học bài 1 đến 4
+
+## Buổi 7: Lập trình hướng đối tượng OOP
 
 - Giới thiệu về các khái niệm trong OOP.
 - Lớp, đối tượng và thuộc tính.
 - Phương thức và đóng gói.
 - Bài tập ứng dụng
 
-## Buổi 6: List và Tuples
+## Buổi 8: List và Tuples
 
 - Hiểu về danh sách và các thao tác trên danh sách.
 - Truy cập và thay đổi phần tử trong danh sách.
 - Giới thiệu về bộ và cách sử dụng.
 - Bài tập ứng dụng
 
-## Buổi 7: Xử lý Chuỗi
+## Buổi 9: Xử lý Chuỗi
 
 - Kiểu dữ liệu chuỗi và các thuộc tính của nó.
 - Các phép toán và phương thức trên chuỗi.
 - Định dạng chuỗi.
 - Bài tập ứng dụng
 
-## Buổi 8: Làm việc với Tập tin và Thư mục
+## Buổi 10: Làm việc với Tập tin và Thư mục
 
 - Đọc và ghi dữ liệu vào tập tin.
 - Chế độ tập tin và đối tượng tập tin.
 - Làm việc với tập tin văn bản và CSV.
 - Bài tập ứng dụng
 
-## Buổi 9: Dữ liệu Từ điển
+## Buổi 11: Dữ liệu Từ điển
 
 - Giới thiệu về từ điển và mục đích của chúng.
 - Làm việc với các phần tử trong từ điển.
 - Phương thức và thao tác trên từ điển.
 - Bài tập ứng dụng
 
-## Buổi 10: Dữ liệu Sets
+## Buổi 12: Dữ liệu Sets, Xử lý ngoại lệ
 
 - Hiểu về danh sách và các thao tác trên danh sách.
 - Truy cập và thay đổi phần tử trong danh sách.
+- Lỗi Syntax và Lỗi Logic Nội tại
+- Bắt Lỗi Exception với Lệnh Try, Mức Đơn Giản
+- Bắt Lỗi Exception với Lệnh Try, Mức Đầy Đủ
+- Bắt Lỗi Chi Tiết
+- Một Vài Lỗi Exception Có Sẵn trong Python
+- Tự Tạo Lỗi (Raise Exception)
+- Mô Hình Đối Tượng của Lỗi Exception
 - Bài tập ứng dụng
 
-## Buổi 11: Đồ hòa con Rùa - Turtle Graphic
+
+## Buổi 13: Review Lession 7-12
+
+- Hệ thống lại kiến thức đã học bài 7 đến 12
+
+## Buổi 14: Đồ hòa con Rùa - Turtle Graphic
 
 - Thiết lập môi trường đồ họa Turtle
 - Hướng của rùa, chế độ vẽ và tọa độ màn hình
@@ -82,13 +103,14 @@
 - Tìm hiểu sâu hơn về điều khiển rùa
 - Bài tập ứng dụng
 
-## Buổi 12: Xử lý Lỗi và Gỡ lỗi
+## Buổi 15: Python Microbit
 
-- Lỗi Syntax và Lỗi Logic Nội tại
-- Bắt Lỗi Exception với Lệnh Try, Mức Đơn Giản
-- Bắt Lỗi Exception với Lệnh Try, Mức Đầy Đủ
-- Bắt Lỗi Chi Tiết
-- Một Vài Lỗi Exception Có Sẵn trong Python
-- Tự Tạo Lỗi (Raise Exception)
-- Mô Hình Đối Tượng của Lỗi Exception
-- Bài tập ứng dụng
+- Điểu khiển bo mạch Micro:bit
+- Điều khiển xe robot với bộ kit Zoombit
+
+## Buổi 16: Thi kết thúc môn
+
+- Làm bài Test 60 Phút
+- Nhận Chứng chỉ
+
+
