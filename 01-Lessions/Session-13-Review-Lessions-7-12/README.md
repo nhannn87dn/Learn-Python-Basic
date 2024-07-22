@@ -58,3 +58,21 @@ tup_fruits = (1, "banana", "cherry", 2, 7)
 - Thay đổi giá trị phần tử "banana" thành "kiwi"
 - Thêm vào tuple trên một phần từ mới "True"
 - Tính tổng các phần tử là số trong Tuple nói trên
+
+---
+
+## Bài 9 - String
+
+1. Cho một một biến `email` bằng giá trị nhập từ người dùng
+
+- Kiểm tra Nếu không có chứa kí tự `@` thì in ra là: "Email không hợp lệ"
+- Còn lại là: "Email đã hợp lệ"
+
+2. Cho 2 biến như sau:
+
+```python
+title = "Sách học Python cơ bản"
+price = 125.234
+```
+
+Yêu cầu in ra: "Sách học Python cơ bản có giá 125.2$"
