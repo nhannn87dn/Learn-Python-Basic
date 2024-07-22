@@ -75,4 +75,25 @@ title = "Sách học Python cơ bản"
 price = 125.234
 ```
 
-Yêu cầu in ra: "Sách học Python cơ bản có giá 125.2$"
+Yêu cầu:
+
+- in ra: "Sách học Python cơ bản có giá 125.2$"
+- Thay thế "Python" thành "Scratch" và in ra title
+- Kiểm tra xem title có bắt đầu bằng "Sách" không, in ra kết quả kiểm tra
+
+---
+
+## Bài 10 - File Handling
+
+---
+
+## Bài 11 - Dictionaries
+
+---
+
+## Bài 12 - Sets và Exception Handling
+
+Tạo một Sets gồm 5 số nguyên từ 2 giá trị nhập từ người dùng `start` và `stop`
+
+- Nếu người dùng nhập vào kí tự là chữ: In ra báo lỗi
+- In ra từng giá trị của Sets vừa tạo trên
