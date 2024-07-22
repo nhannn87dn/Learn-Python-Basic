@@ -32,3 +32,29 @@ Tính và in ra kết quả mức giảm giá của khách hàng:
 - Nguyễn Văn A. Hạng VIP, có đơn hàng 5 triệu
 - Nguyễn Văn B. Hạng GOLD, có đơn hàng 2.5 triệu
 - Nguyễn Văn C. Hạng VIP, có đơn hàng 1.5 triệu
+
+--
+
+## Bài 8 - List và Tuple
+
+1. Cho một list như sau:
+
+```python
+fruits = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+
+```
+
+- In ra một list gồm 2 phần từ "cherry", "orange"
+- In ra giá trị của từng phần tử trong phần list đã cho nói trên.
+- Xóa "kiwi" và in ra list sau khi đã xóa.
+- Bổ sung vào list trên một phần tử mới "pear" và in ra list.
+
+2. Cho một tuple như sau:
+
+```python
+tup_fruits = (1, "banana", "cherry", 2, 7)
+```
+
+- Thay đổi giá trị phần tử "banana" thành "kiwi"
+- Thêm vào tuple trên một phần từ mới "True"
+- Tính tổng các phần tử là số trong Tuple nói trên
