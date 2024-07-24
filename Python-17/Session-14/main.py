@@ -47,4 +47,5 @@ for i in range(4):
 #b5. Kết thúc tô màu
 t.end_fill()
 
+# duy trì sân khấu vẻ
 t.mainloop()
