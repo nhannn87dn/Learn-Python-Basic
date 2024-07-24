@@ -169,6 +169,8 @@ for _ in range(36):
 turtle.done()
 ```
 
-## 7. Kết Luận
+## Thực hành
 
-Turtle Graphics là một công cụ mạnh mẽ và dễ sử dụng để vẽ các hình ảnh và hình học trong Python. Bạn có thể sử dụng nó để học lập trình, minh họa các thuật toán hình học, hoặc tạo ra các tác phẩm nghệ thuật số. Hy vọng bài giảng này giúp bạn hiểu rõ hơn về cách sử dụng Turtle Graphics trong Python.
+Vẽ những hình học cơ bản sau
+
+![](nhan-hieu-hinh-hoc.jpg)
