@@ -14,45 +14,69 @@ import turtle
 
 ## 3. Các Lệnh Cơ Bản của Turtle
 
-Dưới đây là bảng phân nhóm các lệnh của thư viện `turtle` kèm theo giải thích bằng tiếng Việt, lấy từ tài liệu [turtle — Turtle graphics — Python 3.12.4 documentation](https://docs.python.org/3/library/turtle.html#turtle-methods).
+Dưới đây là bảng phân nhóm các lệnh của thư viện `turtle` kèm theo giải thích bằng tiếng Việt và các tham số của từng hàm, lấy từ tài liệu [turtle — Turtle graphics — Python 3.12.4 documentation](https://docs.python.org/3/library/turtle.html#turtle-methods).
 
 ### Turtle Methods
 
 #### Turtle Motion
 
 - **Move and Draw**
-  - `forward() | fd()`: Di chuyển rùa về phía trước một khoảng cách nhất định.
-  - `backward() | bk() | back()`: Di chuyển rùa lùi về phía sau một khoảng cách nhất định.
-  - `right() | rt()`: Xoay rùa sang phải một góc nhất định.
-  - `left() | lt()`: Xoay rùa sang trái một góc nhất định.
-  - `goto() | setpos() | setposition()`: Di chuyển rùa đến vị trí (x, y) xác định.
-  - `teleport()`: Dịch chuyển rùa tức thời đến vị trí mới mà không vẽ đường.
-  - `setx()`: Đặt tọa độ x của rùa.
-  - `sety()`: Đặt tọa độ y của rùa.
-  - `setheading() | seth()`: Đặt hướng của rùa.
-  - `home()`: Đưa rùa về vị trí gốc (0, 0).
-  - `circle()`: Vẽ một hình tròn với bán kính xác định.
-  - `dot()`: Vẽ một chấm tròn tại vị trí hiện tại của rùa.
+  - `forward(distance) | fd(distance)`: Di chuyển rùa về phía trước một khoảng cách nhất định.
+    - `distance`: Khoảng cách để rùa di chuyển về phía trước.
+  - `backward(distance) | bk(distance) | back(distance)`: Di chuyển rùa lùi về phía sau một khoảng cách nhất định.
+    - `distance`: Khoảng cách để rùa di chuyển về phía sau.
+  - `right(angle) | rt(angle)`: Xoay rùa sang phải một góc nhất định.
+    - `angle`: Góc xoay (độ).
+  - `left(angle) | lt(angle)`: Xoay rùa sang trái một góc nhất định.
+    - `angle`: Góc xoay (độ).
+  - `goto(x, y) | setpos(x, y) | setposition(x, y)`: Di chuyển rùa đến vị trí (x, y) xác định.
+    - `x`: Tọa độ x của vị trí đích.
+    - `y`: Tọa độ y của vị trí đích.
+  - `teleport(x, y)`: Dịch chuyển rùa tức thời đến vị trí mới mà không vẽ đường.
+    - `x`: Tọa độ x của vị trí đích.
+    - `y`: Tọa độ y của vị trí đích.
+  - `setx(x)`: Đặt tọa độ x của rùa.
+    - `x`: Tọa độ x mới của rùa.
+  - `sety(y)`: Đặt tọa độ y của rùa.
+    - `y`: Tọa độ y mới của rùa.
+  - `setheading(to_angle) | seth(to_angle)`: Đặt hướng của rùa.
+    - `to_angle`: Góc hướng mới của rùa (độ).
+  - `home()`: Đưa rùa về vị trí gốc (0, 0) và đặt hướng về phía đông.
+  - `circle(radius, extent=None, steps=None)`: Vẽ một hình tròn với bán kính xác định.
+    - `radius`: Bán kính của hình tròn.
+    - `extent`: (Tùy chọn) Góc cung của hình tròn (độ).
+    - `steps`: (Tùy chọn) Số bước để vẽ hình đa giác gần đúng.
+  - `dot(size=None, *color)`: Vẽ một chấm tròn tại vị trí hiện tại của rùa.
+    - `size`: (Tùy chọn) Kích thước của chấm tròn.
+    - `color`: (Tùy chọn) Màu của chấm tròn.
   - `stamp()`: Đóng dấu hình rùa tại vị trí hiện tại.
-  - `clearstamp()`: Xóa một dấu đã được đóng.
-  - `clearstamps()`: Xóa tất cả các dấu đã được đóng.
+  - `clearstamp(stampid)`: Xóa một dấu đã được đóng.
+    - `stampid`: ID của dấu cần xóa.
+  - `clearstamps(n=None)`: Xóa tất cả các dấu đã được đóng hoặc n dấu gần đây nhất.
+    - `n`: (Tùy chọn) Số lượng dấu cần xóa.
   - `undo()`: Hoàn tác hành động cuối cùng.
-  - `speed()`: Đặt tốc độ di chuyển của rùa.
+  - `speed(speed=None)`: Đặt tốc độ di chuyển của rùa.
+    - `speed`: (Tùy chọn) Tốc độ mới của rùa (0-10).
 
 #### Tell Turtle’s State
 
 - **Position and Orientation**
   - `position() | pos()`: Trả về tọa độ hiện tại của rùa.
-  - `towards()`: Tính toán góc để rùa quay về một vị trí xác định.
+  - `towards(x, y=None)`: Tính toán góc để rùa quay về một vị trí xác định.
+    - `x`: Tọa độ x của vị trí đích hoặc một cặp tọa độ (x, y).
+    - `y`: (Tùy chọn) Tọa độ y của vị trí đích.
   - `xcor()`: Trả về tọa độ x hiện tại của rùa.
   - `ycor()`: Trả về tọa độ y hiện tại của rùa.
-  - `heading()`: Trả về hướng hiện tại của rùa.
-  - `distance()`: Tính khoảng cách từ vị trí hiện tại của rùa đến một điểm xác định.
+  - `heading()`: Trả về hướng hiện tại của rùa (độ).
+  - `distance(x, y=None)`: Tính khoảng cách từ vị trí hiện tại của rùa đến một điểm xác định.
+    - `x`: Tọa độ x của vị trí đích hoặc một cặp tọa độ (x, y).
+    - `y`: (Tùy chọn) Tọa độ y của vị trí đích.
 
 #### Settings and Measurement
 
 - **Unit Settings**
-  - `degrees()`: Đặt đơn vị đo góc là độ.
+  - `degrees(fullcircle=360.0)`: Đặt đơn vị đo góc là độ.
+    - `fullcircle`: (Tùy chọn) Độ của một vòng tròn đầy đủ.
   - `radians()`: Đặt đơn vị đo góc là radian.
 
 #### Pen Control
@@ -61,15 +85,21 @@ Dưới đây là bảng phân nhóm các lệnh của thư viện `turtle` kèm
 
   - `pendown() | pd() | down()`: Đặt bút xuống để bắt đầu vẽ.
   - `penup() | pu() | up()`: Nhấc bút lên để ngừng vẽ.
-  - `pensize() | width()`: Đặt độ rộng của nét vẽ.
-  - `pen()`: Trả về hoặc đặt các thuộc tính của bút.
+  - `pensize(width=None) | width(width=None)`: Đặt độ rộng của nét vẽ.
+    - `width`: (Tùy chọn) Độ rộng mới của nét vẽ.
+  - `pen(pen=None, **pendict)`: Trả về hoặc đặt các thuộc tính của bút.
+    - `pen`: (Tùy chọn) Từ điển chứa các thuộc tính bút mới.
+    - `pendict`: (Tùy chọn) Các thuộc tính bút khác.
   - `isdown()`: Kiểm tra xem bút có đang ở trạng thái vẽ hay không.
 
 - **Color Control**
 
-  - `color()`: Đặt màu của bút và màu tô.
-  - `pencolor()`: Đặt màu của bút.
-  - `fillcolor()`: Đặt màu tô.
+  - `color(*args)`: Đặt màu của bút và màu tô.
+    - `args`: Màu sắc cho bút và màu tô (có thể là tên màu hoặc mã màu).
+  - `pencolor(*args)`: Đặt màu của bút.
+    - `args`: Màu sắc cho bút (có thể là tên màu hoặc mã màu).
+  - `fillcolor(*args)`: Đặt màu tô.
+    - `args`: Màu sắc cho màu tô (có thể là tên màu hoặc mã màu).
 
 - **Filling**
 
@@ -80,7 +110,11 @@ Dưới đây là bảng phân nhóm các lệnh của thư viện `turtle` kèm
 - **More Drawing Control**
   - `reset()`: Đặt lại rùa về trạng thái ban đầu và xóa toàn bộ bản vẽ.
   - `clear()`: Xóa toàn bộ bản vẽ nhưng giữ nguyên trạng thái của rùa.
-  - `write()`: Viết văn bản tại vị trí hiện tại của rùa.
+  - `write(arg, move=False, align='left', font=('Arial', 8, 'normal'))`: Viết văn bản tại vị trí hiện tại của rùa.
+    - `arg`: Văn bản cần viết.
+    - `move`: (Tùy chọn) Di chuyển rùa sau khi viết.
+    - `align`: (Tùy chọn) Căn chỉnh văn bản ('left', 'center' hoặc 'right').
+    - `font`: (Tùy chọn) Bộ ba chứa tên phông chữ, kích thước và kiểu phông chữ.
 
 #### Turtle State
 
@@ -91,22 +125,40 @@ Dưới đây là bảng phân nhóm các lệnh của thư viện `turtle` kèm
   - `isvisible()`: Kiểm tra xem rùa có đang được hiển thị hay không.
 
 - **Appearance**
-  - `shape()`: Đặt hình dạng của rùa.
-  - `resizemode()`: Đặt chế độ thay đổi kích thước hình rùa.
-  - `shapesize() | turtlesize()`: Đặt kích thước hình rùa.
-  - `shearfactor()`: Đặt hệ số biến dạng của rùa.
-  - `settiltangle()`: Đặt góc nghiêng của rùa.
+  - `shape(name=None)`: Đặt hình dạng của rùa.
+    - `name`: (Tùy chọn) Tên của hình dạng mới.
+  - `resizemode(rmode=None)`: Đặt chế độ thay đổi kích thước hình rùa.
+    - `rmode`: (Tùy chọn) Chế độ thay đổi kích thước ('auto', 'user', 'noresize').
+  - `shapesize(stretch_wid=None, stretch_len=None, outline=None) | turtlesize(stretch_wid=None, stretch_len=None, outline=None)`: Đặt kích thước hình rùa.
+    - `stretch_wid`: (Tùy chọn) Hệ số kéo dãn chiều rộng.
+    - `stretch_len`: (Tùy chọn) Hệ số kéo dãn chiều dài.
+    - `outline`: (Tùy chọn) Độ rộng của viền ngoài.
+  - `shearfactor(shear=None)`: Đặt hệ số biến dạng của rùa.
+    - `shear`: (Tùy chọn) Hệ số biến dạng.
+  - `settiltangle(angle)`: Đặt góc nghiêng của rùa.
+    - `angle`: Góc nghiêng mới của rùa (độ).
   - `tiltangle()`: Trả về góc nghiêng của rùa.
-  - `tilt()`: Nghiêng rùa một góc nhất định.
-  - `shapetransform()`: Đặt phép biến hình của rùa.
+  - `tilt(angle)`: Nghiêng rùa một góc nhất định.
+    - `angle`: Góc nghiêng (độ).
+  - `shapetransform(t11=None, t12=None, t21=None, t22=None)`: Đặt phép biến hình của rùa.
+    - `t11, t12, t21, t22`: Các tham số của ma trận biến hình.
   - `get_shapepoly()`: Trả về hình đa giác của rùa.
 
 #### Using Events
 
 - **Mouse and Keyboard Events**
-  - `onclick()`: Đăng ký một hàm xử lý sự kiện click chuột.
-  - `onrelease()`: Đăng ký một hàm xử lý sự kiện thả chuột.
-  - `ondrag()`: Đăng ký một hàm xử lý sự kiện kéo chuột.
+  - `onclick(fun, btn=1, add=None)`: Đăng ký một hàm xử lý sự kiện click chuột.
+    - `fun`: Hàm xử lý sự kiện.
+    - `btn`: (Tùy chọn) Số nút chuột.
+    - `add`: (Tùy chọn) Nếu đúng, thêm hàm mới vào danh sách các hàm hiện có.
+  - `onrelease(fun, btn=1, add=None)`: Đăng ký một hàm xử lý sự kiện thả chuột.
+    - `fun`: Hàm xử lý sự kiện.
+    - `btn`: (Tùy chọn) Số nút chuột.
+    - `add`: (Tùy chọn) Nếu đúng, thêm hàm mới vào danh sách các hàm hiện có.
+  - `ondrag(fun, btn=1, add=None)`: Đăng ký một hàm xử lý sự kiện kéo chuột.
+    - `fun`: Hàm xử lý sự kiện.
+    - `btn`: (Tùy chọn) Số nút chuột.
+    - `add`: (Tùy chọn) Nếu đúng, thêm hàm mới vào danh sách các hàm hiện có.
 
 #### Special Turtle Methods
 
@@ -117,7 +169,8 @@ Dưới đây là bảng phân nhóm các lệnh của thư viện `turtle` kèm
   - `clone()`: Tạo một bản sao của rùa.
   - `getturtle() | getpen()`: Trả về chính đối tượng rùa.
   - `getscreen()`: Trả về đối tượng màn hình mà rùa đang vẽ trên đó.
-  - `setundobuffer()`: Đặt kích thước bộ đệm hoàn tác.
+  - `setundobuffer(size)`: Đặt kích thước bộ đệm hoàn tác.
+    - `size`: Kích thước bộ đệm.
   - `undobufferentries()`: Trả về số lượng mục trong bộ đệm hoàn tác.
 
 ### Methods of TurtleScreen/Screen
@@ -125,38 +178,63 @@ Dưới đây là bảng phân nhóm các lệnh của thư viện `turtle` kèm
 #### Window Control
 
 - **Background and Screen Settings**
-  - `bgcolor()`: Đặt màu nền của màn hình.
-  - `bgpic()`: Đặt hình nền của màn hình.
+  - `bgcolor(*args)`: Đặt màu nền của màn hình.
+    - `args`: Màu sắc nền (có thể là tên màu hoặc mã màu).
+  - `bgpic(picname=None)`: Đặt hình nền của màn hình.
+    - `picname`: (Tùy chọn) Tên của hình nền.
   - `clearscreen()`: Xóa toàn bộ màn hình.
   - `resetscreen()`: Đặt lại màn hình về trạng thái ban đầu.
-  - `screensize()`: Đặt kích thước của màn hình.
-  - `setworldcoordinates()`: Đặt tọa độ thế giới cho màn hình.
+  - `screensize(canvwidth=None, canvheight=None, bg=None)`: Đặt kích thước của màn hình.
+    - `canvwidth`: (Tùy chọn) Chiều rộng canvas.
+    - `canvheight`: (Tùy chọn) Chiều cao canvas.
+    - `bg`: (Tùy chọn) Màu nền.
+  - `setworldcoordinates(llx, lly, urx, ury)`: Đặt tọa độ thế giới cho màn hình.
+    - `llx`: Tọa độ x của góc dưới bên trái.
+    - `lly`: Tọa độ y của góc dưới bên trái.
+    - `urx`: Tọa độ x của góc trên bên phải.
+    - `ury`: Tọa độ y của góc trên bên phải.
 
 #### Animation Control
 
 - **Animation Settings**
-  - `delay()`: Đặt độ trễ của hoạt hình.
-  - `tracer()`: Đặt số bước vẽ sẽ được bỏ qua để tăng tốc độ vẽ.
+  - `delay(delay=None)`: Đặt độ trễ của hoạt hình.
+    - `delay`: (Tùy chọn) Độ trễ (ms).
+  - `tracer(n=None, delay=None)`: Đặt số bước vẽ sẽ được bỏ qua để tăng tốc độ vẽ.
+    - `n`: (Tùy chọn) Số bước vẽ.
+    - `delay`: (Tùy chọn) Độ trễ (ms).
   - `update()`: Cập nhật màn hình với các thay đổi vẽ.
 
 #### Using Screen Events
 
 - **Event Listeners**
-  - `listen()`: Đặt màn hình vào chế độ lắng nghe sự kiện.
-  - `onkey() | onkeyrelease()`: Đăng ký một hàm xử lý sự kiện nhấn/phát hành phím.
-  - `onkeypress()`: Đăng ký một hàm xử lý sự kiện nhấn phím.
-  - `onclick() | onscreenclick()`: Đăng ký một hàm xử lý sự kiện click chuột trên màn hình.
-  - `ontimer()`: Đăng ký một hàm xử lý sự kiện hẹn giờ.
+  - `listen(xdummy=None, ydummy=None)`: Đặt màn hình vào chế độ lắng nghe sự kiện.
+  - `onkey(fun, key) | onkeyrelease(fun, key)`: Đăng ký một hàm xử lý sự kiện nhấn/phát hành phím.
+    - `fun`: Hàm xử lý sự kiện.
+    - `key`: Phím cần lắng nghe.
+  - `onkeypress(fun, key=None)`: Đăng ký một hàm xử lý sự kiện nhấn phím.
+    - `fun`: Hàm xử lý sự kiện.
+    - `key`: (Tùy chọn) Phím cần lắng nghe.
+  - `onclick(fun, btn=1, add=None) | onscreenclick(fun, btn=1, add=None)`: Đăng ký một hàm xử lý sự kiện click chuột trên màn hình.
+    - `fun`: Hàm xử lý sự kiện.
+    - `btn`: (Tùy chọn) Số nút chuột.
+    - `add`: (Tùy chọn) Nếu đúng, thêm hàm mới vào danh sách các hàm hiện có.
+  - `ontimer(fun, t)`: Đăng ký một hàm xử lý sự kiện hẹn giờ.
+    - `fun`: Hàm xử lý sự kiện.
+    - `t`: Thời gian đợi (ms).
   - `mainloop() | done()`: Bắt đầu vòng lặp chính của chương trình.
 
 #### Settings and Special Methods
 
 - **Screen Mode and Shape Management**
-  - `mode()`: Đặt chế độ màn hình.
-  - `colormode()`: Đặt chế độ màu.
+  - `mode(mode=None)`: Đặt chế độ màn hình.
+    - `mode`: (Tùy chọn) Chế độ mới ('standard', 'logo', 'world').
+  - `colormode(cmode=None)`: Đặt chế độ màu.
+    - `cmode`: (Tùy chọn) Chế độ màu (1.0 hoặc 255).
   - `getcanvas()`: Trả về đối tượng canvas của màn hình.
   - `getshapes()`: Trả về danh sách các hình dạng có sẵn.
-  - `register_shape() | addshape()`: Đăng ký một hình dạng mới.
+  - `register_shape(name, shape=None) | addshape(name, shape=None)`: Đăng ký một hình dạng mới.
+    - `name`: Tên của hình dạng mới.
+    - `shape`: (Tùy chọn) Hình dạng (có thể là tệp hình ảnh hoặc danh sách các điểm).
   - `turtles()`: Trả về danh sách các rùa trên màn hình.
   - `window_height()`: Trả về chiều cao cửa sổ.
   - `window_width()`: Trả về chiều rộng cửa sổ.
@@ -164,16 +242,28 @@ Dưới đây là bảng phân nhóm các lệnh của thư viện `turtle` kèm
 #### Input Methods
 
 - **User Input**
-  - `textinput()`: Hiển thị hộp thoại nhập văn bản từ người dùng.
-  - `numinput()`: Hiển thị hộp thoại nhập số từ người dùng.
+  - `textinput(title, prompt)`: Hiển thị hộp thoại nhập văn bản từ người dùng.
+    - `title`: Tiêu đề của hộp thoại.
+    - `prompt`: Lời nhắc cho người dùng.
+  - `numinput(title, prompt, default=None, minval=None, maxval=None)`: Hiển thị hộp thoại nhập số từ người dùng.
+    - `title`: Tiêu đề của hộp thoại.
+    - `prompt`: Lời nhắc cho người dùng.
+    - `default`: (Tùy chọn) Giá trị mặc định.
+    - `minval`: (Tùy chọn) Giá trị nhỏ nhất.
+    - `maxval`: (Tùy chọn) Giá trị lớn nhất.
 
 #### Methods Specific to Screen
 
 - **Screen Specific**
   - `bye()`: Đóng cửa sổ màn hình.
   - `exitonclick()`: Đóng cửa sổ màn hình khi người dùng click chuột.
-  - `setup()`: Đặt kích thước và vị trí của cửa sổ màn hình.
-  - `title()`: Đặt tiêu đề của cửa sổ màn hình.
+  - `setup(width=0.5, height=0.75, startx=None, starty=None)`: Đặt kích thước và vị trí của cửa sổ màn hình.
+    - `width`: (Tùy chọn) Chiều rộng của cửa sổ.
+    - `height`: (Tùy chọn) Chiều cao của cửa sổ.
+    - `startx`: (Tùy chọn) Vị trí x của cửa sổ.
+    - `starty`: (Tùy chọn) Vị trí y của cửa sổ.
+  - `title(titlestring)`: Đặt tiêu đề của cửa sổ màn hình.
+    - `titlestring`: Tiêu đề mới.
 
 Bạn có thể truy cập danh sách đầy đủ các lệnh và mô tả chi tiết từ đường dẫn tài liệu chính thức: [turtle — Turtle graphics — Python 3.12.4 documentation](https://docs.python.org/3/library/turtle.html#turtle-methods).
 
