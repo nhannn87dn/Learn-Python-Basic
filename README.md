@@ -60,21 +60,15 @@
 - Định dạng chuỗi.
 - Bài tập ứng dụng
 
-## Buổi 10: Làm việc với Tập tin và Thư mục
 
-- Đọc và ghi dữ liệu vào tập tin.
-- Chế độ tập tin và đối tượng tập tin.
-- Làm việc với tập tin văn bản và CSV.
-- Bài tập ứng dụng
-
-## Buổi 11: Dữ liệu Từ điển
+## Buổi 10: Dữ liệu Từ điển
 
 - Giới thiệu về từ điển và mục đích của chúng.
 - Làm việc với các phần tử trong từ điển.
 - Phương thức và thao tác trên từ điển.
 - Bài tập ứng dụng
 
-## Buổi 12: Dữ liệu Sets, Xử lý ngoại lệ
+## Buổi 11: Dữ liệu Sets, Xử lý ngoại lệ
 
 - Hiểu về danh sách và các thao tác trên danh sách.
 - Truy cập và thay đổi phần tử trong danh sách.
@@ -88,9 +82,16 @@
 - Bài tập ứng dụng
 
 
-## Buổi 13: Review Lession 7-12
+## Buổi 12: Review Lession 7-11
 
-- Hệ thống lại kiến thức đã học bài 7 đến 12
+- Hệ thống lại kiến thức đã học bài 7 đến 11
+
+
+## Buổi 13: Làm việc với Tập tin và Thư mục
+
+- Đọc và ghi dữ liệu vào tập tin.
+- Chế độ tập tin và đối tượng tập tin.
+- Bài tập ứng dụng
 
 ## Buổi 14: Đồ hòa con Rùa - Turtle Graphic
 
