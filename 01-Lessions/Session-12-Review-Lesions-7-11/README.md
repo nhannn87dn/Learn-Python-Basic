@@ -103,7 +103,7 @@ lop: "CNTT"
 
 ## Bài 11 - Sets và Exception Handling
 
-Tạo một Sets gồm 5 số nguyên từ 2 giá trị nhập từ người dùng `start` và `stop`
+Tạo một Sets gồm 5 số nguyên tạo ra bởi range(start, stop) trong đó `start` và `stop` nhập từ người dùng.
 
 - Nếu người dùng nhập vào kí tự là chữ: In ra báo lỗi
 - In ra từng giá trị của Sets vừa tạo trên
