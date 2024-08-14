@@ -1,4 +1,24 @@
-# Review Lesions 7 - 12
+# Review Lesions 7 - 11
+
+Dưới đây là bảng so sánh giữa `list`, `tuple`, `set`, và `dict` trong Python:
+
+| Đặc điểm          | List                        | Tuple                       | Set                            | Dict                          |
+| ----------------- | --------------------------- | --------------------------- | ------------------------------ | ----------------------------- |
+| Khả năng thay đổi | Có thể thay đổi             | Không thể thay đổi          | Có thể thay đổi                | Có thể thay đổi               |
+| Thứ tự            | Có thứ tự                   | Có thứ tự                   | Không có thứ tự                | Có thứ tự (từ Python 3.7)     |
+| Phần tử trùng lặp | Cho phép                    | Cho phép                    | Không cho phép                 | Khóa không cho phép trùng lặp |
+| Cú pháp           | `[1, 2, 3]`                 | `(1, 2, 3)`                 | `{1, 2, 3}`                    | `{'a': 1, 'b': 2}`            |
+| Truy cập          | Chỉ số                      | Chỉ số                      | Không thể truy cập bằng chỉ số | Khóa                          |
+| Tốc độ            | Chậm hơn tuple cho truy cập | Nhanh hơn list cho truy cập | Nhanh cho phép toán tập hợp    | Nhanh cho truy cập bằng khóa  |
+
+### Chi tiết thêm:
+
+- **List**: Có thể thay đổi, cho phép trùng lặp, lý tưởng cho các thao tác cần thay đổi dữ liệu.
+- **Tuple**: Không thể thay đổi, cho phép trùng lặp, dùng cho dữ liệu cố định.
+- **Set**: Không có thứ tự, không cho phép trùng lặp, lý tưởng cho phép toán tập hợp, loại bỏ phần tử trùng lặp.
+- **Dict**: Lưu trữ cặp khóa-giá trị, nhanh cho truy cập dữ liệu qua khóa, không cho phép trùng lặp khóa.
+
+---
 
 ## Bài 7 - OOPs
 
