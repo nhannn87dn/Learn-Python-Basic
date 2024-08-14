@@ -2,14 +2,23 @@
 
 Dưới đây là bảng so sánh giữa `list`, `tuple`, `set`, và `dict` trong Python:
 
-| Đặc điểm          | List                        | Tuple                       | Set                            | Dict                          |
-| ----------------- | --------------------------- | --------------------------- | ------------------------------ | ----------------------------- |
-| Khả năng thay đổi | Có thể thay đổi             | Không thể thay đổi          | Có thể thay đổi                | Có thể thay đổi               |
-| Thứ tự            | Có thứ tự                   | Có thứ tự                   | Không có thứ tự                | Có thứ tự (từ Python 3.7)     |
-| Phần tử trùng lặp | Cho phép                    | Cho phép                    | Không cho phép                 | Khóa không cho phép trùng lặp |
-| Cú pháp           | `[1, 2, 3]`                 | `(1, 2, 3)`                 | `{1, 2, 3}`                    | `{'a': 1, 'b': 2}`            |
-| Truy cập          | Chỉ số                      | Chỉ số                      | Không thể truy cập bằng chỉ số | Khóa                          |
-| Tốc độ            | Chậm hơn tuple cho truy cập | Nhanh hơn list cho truy cập | Nhanh cho phép toán tập hợp    | Nhanh cho truy cập bằng khóa  |
+| Đặc điểm          | List                        | Tuple                       | Set                            | Dict                              |
+| ----------------- | --------------------------- | --------------------------- | ------------------------------ | --------------------------------- |
+| Khả năng thay đổi | Có thể thay đổi             | Không thể thay đổi          | Có thể thay đổi                | Có thể thay đổi                   |
+| Thứ tự            | Có thứ tự                   | Có thứ tự                   | Không có thứ tự                | Có thứ tự (từ Python 3.7)         |
+| Phần tử trùng lặp | Cho phép                    | Cho phép                    | Không cho phép                 | Khóa không cho phép trùng lặp     |
+| Cú pháp           | `[1, 2, 3]`                 | `(1, 2, 3)`                 | `{1, 2, 3}`                    | `{'a': 1, 'b': 2}`                |
+| Truy cập          | Chỉ số                      | Chỉ số                      | Không thể truy cập bằng chỉ số | Khóa                              |
+| Tốc độ            | Chậm hơn tuple cho truy cập | Nhanh hơn list cho truy cập | Nhanh cho phép toán tập hợp    | Nhanh cho truy cập bằng khóa      |
+| Kiểu dữ liệu      | Bất kỳ                      | Bất kỳ                      | Bất kỳ (phải có thể băm)       | Khóa: có thể băm, Giá trị: bất kỳ |
+
+Trong Python, một đối tượng có thể băm (hashable) là đối tượng có giá trị băm (hash value) không thay đổi trong suốt vòng đời của nó. Điều này có nghĩa là:
+
+- Đối tượng có thể được sử dụng làm khóa trong từ điển (`dict`) hoặc phần tử trong tập hợp (`set`).
+- Phải triển khai phương thức `__hash__()` và `__eq__()`.
+- Thông thường, các kiểu dữ liệu bất biến như `int`, `float`, `str`, và `tuple` (chứa các phần tử có thể băm) là có thể băm.
+
+Các đối tượng có thể băm đảm bảo rằng chúng có thể so sánh một cách nhất quán và giá trị băm của chúng không thay đổi.
 
 ### Chi tiết thêm:
 
