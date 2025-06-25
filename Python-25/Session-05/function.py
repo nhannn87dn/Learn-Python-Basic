@@ -64,8 +64,27 @@ print(sum(52,4)  + 4)
 # Viết hàm tính Tổng x và y số và in ra.
 # Nếu nhập x = 2, y = 4. Kết quả mong muốn: = 6
 
-# Câu 2: Viết một hàm kiểm tra 1 số x có phải là số dương không.
-# Cho biết x là giá trị nhập từ người dùng.
-# Nếu là x là số dương: In ra "x là số dương"
-# Nếu x là số âm: In ra "x là số âm"
-# Còn lại: In ra "x không hợp lệ"
+def calSum(i,j):
+    print(i + j)
+
+#x = int(input('x: '))
+#y = int(input('y: '))
+#calSum(x, y)
+
+# Câu 2: Viết một hàm kiểm tra 1 số z có phải là số dương không.
+# Cho biết z là giá trị nhập từ người dùng.
+# Nếu là z là số dương: In ra "z là số dương"
+# Nếu z là số âm: In ra "z là số âm"
+# Còn lại: In ra "z không hợp lệ"
+
+def checkNumber(n):
+    if n > 0:
+        print('n la so duong')
+    elif n < 0:
+        print('n la so am')
+    else:
+        print('n la ko hop le')
+# lấy giá trị nhập từ người dùng
+z = int(input('n: '))
+# viêt hàm để kiểm tra z
+checkNumber(z)
