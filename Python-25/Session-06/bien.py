@@ -66,4 +66,19 @@
 
 # Tính và in ra **số tiền thuế phải nộp**.
 
+# Câu 11:
+# Viết chương trình nhập vào:
 
+# * Điểm 3 môn: Toán, Lý, Hóa (mỗi môn từ 0 → 10)
+# * Khu vực ưu tiên: A, B, C (mỗi khu vực có điểm cộng khác nhau):
+
+#   * A: +2 điểm
+#   * B: +1 điểm
+#   * C: +0.5 điểm
+#   * Không thuộc khu vực: +0 điểm
+
+# Yêu cầu:
+
+# * Tính tổng điểm = tổng 3 môn + điểm ưu tiên
+# * Xét **đỗ** nếu tổng điểm ≥ 20 và không có môn nào dưới 1
+# * Ngược lại là **rớt**
