@@ -14,3 +14,16 @@
 # Kiểm tra m:
 # - Nếu m là số chẵn thì in ra m là số chẵn
 # - CÒn ngược lại in ra m là số lẻ.
+
+# Câu 5: Cho biết giá 1kg gạo là 15.000đ, nếu mua trên 5 kg thì giá còn 12.000 / 1kg.
+# Hãy viết chương trình yêu cầu người dùng nhập vào số kilograms gạo cần mua. 
+# Tính và và in ra số tiền cần thanh toán.
+
+# Câu 6: 
+# Siêu thị có chương trình. Nếu khách hàng mua với hóa đơn >= 500.000đ và 
+# là thành viên VIP thì được giảm 10%, GOLD thì được giảm 5%, còn lại không giảm.
+
+# Yêu cầu tính số tiền cần thanh toán:
+# - Khách hàng A có hạng thẻ thành viên là VIP, đi mua hàng ở siêu
+# thị với hóa đơn 500.000đ.
+# - Khách hàng B có hạng thẻ là MEMBER, có hóa đơn 100.000đ
